@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['icard',['ICard',['../interfaceminihearthstone_1_1entities_1_1cards_1_1_i_card.html',1,'minihearthstone::entities::cards']]],
+  ['icard_2ejava',['ICard.java',['../_i_card_8java.html',1,'']]],
+  ['iclient_2ejava',['IClient.java',['../_i_client_8java.html',1,'']]],
+  ['id',['id',['../classminihearthstone_1_1entities_1_1cards_1_1_card.html#a198ce2b307ba81854ebad3f8a6d6f012',1,'minihearthstone.entities.cards.Card.id()'],['../classminihearthstone_1_1entities_1_1heroes_1_1_hero.html#a66ad2e348704bf77f61824a9c3dfcca3',1,'minihearthstone.entities.heroes.Hero.id()']]],
+  ['ideck',['IDeck',['../interfaceminihearthstone_1_1entities_1_1deck_1_1_i_deck.html',1,'minihearthstone::entities::deck']]],
+  ['ideck_2ejava',['IDeck.java',['../_i_deck_8java.html',1,'']]],
+  ['ieffect',['IEffect',['../interfaceminihearthstone_1_1entities_1_1cards_1_1effects_1_1_i_effect.html',1,'minihearthstone::entities::cards::effects']]],
+  ['ieffect_2ejava',['IEffect.java',['../_i_effect_8java.html',1,'']]],
+  ['ifacade',['IFacade',['../interfaceminihearthstone_1_1facade_1_1_i_facade.html',1,'minihearthstone::facade']]],
+  ['ifacade_2ejava',['IFacade.java',['../_i_facade_8java.html',1,'']]],
+  ['igameboard',['IGameBoard',['../interfaceminihearthstone_1_1entities_1_1gameboard_1_1_i_game_board.html',1,'minihearthstone::entities::gameboard']]],
+  ['igameboard_2ejava',['IGameBoard.java',['../_i_game_board_8java.html',1,'']]],
+  ['ihero',['IHero',['../interfaceminihearthstone_1_1entities_1_1heroes_1_1_i_hero.html',1,'minihearthstone::entities::heroes']]],
+  ['ihero_2ejava',['IHero.java',['../_i_hero_8java.html',1,'']]],
+  ['imagemirroir',['ImageMirroir',['../classminihearthstone_1_1entities_1_1cards_1_1_image_mirroir.html',1,'minihearthstone.entities.cards.ImageMirroir'],['../classminihearthstone_1_1entities_1_1cards_1_1_image_mirroir.html#a11c57cfae89d0486aa2ca5ffe58fd088',1,'minihearthstone.entities.cards.ImageMirroir.ImageMirroir()']]],
+  ['imagemirroir_2ejava',['ImageMirroir.java',['../_image_mirroir_8java.html',1,'']]],
+  ['imatch',['IMatch',['../interfaceminihearthstone_1_1entities_1_1match_1_1_i_match.html',1,'minihearthstone::entities::match']]],
+  ['imatch_2ejava',['IMatch.java',['../_i_match_8java.html',1,'']]],
+  ['incrementmana',['incrementMana',['../classminihearthstone_1_1entities_1_1player_1_1_player.html#a60abc4aba8fd25a02c1f14c3b8964538',1,'minihearthstone::entities::player::Player']]],
+  ['initgame',['initGame',['../classminihearthstone_1_1controller_1_1_client_proxy.html#afd76cdbdf63fb3d759650a88b16c5a3b',1,'minihearthstone.controller.ClientProxy.initGame()'],['../classminihearthstone_1_1facade_1_1_facade.html#a5b5991fed781ba86643f6a302a9142df',1,'minihearthstone.facade.Facade.initGame()'],['../interfaceminihearthstone_1_1facade_1_1_i_facade.html#a7114ad3c29ff09c7cef3d947bb29470a',1,'minihearthstone.facade.IFacade.initGame()']]],
+  ['iplayer',['IPlayer',['../interfaceminihearthstone_1_1entities_1_1player_1_1_i_player.html',1,'minihearthstone::entities::player']]],
+  ['iplayer_2ejava',['IPlayer.java',['../_i_player_8java.html',1,'']]],
+  ['isendofgame',['isEndOfGame',['../classminihearthstone_1_1entities_1_1gameboard_1_1_game_board.html#ad13a48e6935bb169f64f5b874558f032',1,'minihearthstone.entities.gameboard.GameBoard.isEndOfGame()'],['../interfaceminihearthstone_1_1entities_1_1gameboard_1_1_i_game_board.html#a2322ae33cf8f17934be986d079fff7b9',1,'minihearthstone.entities.gameboard.IGameBoard.isEndOfGame()']]]
+];

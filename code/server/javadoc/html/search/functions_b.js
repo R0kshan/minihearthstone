@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['normalattackonhero',['normalAttackOnHero',['../classminihearthstone_1_1entities_1_1cards_1_1_basic_card.html#a75352aa9b929bec6e855432cf3d653a8',1,'minihearthstone.entities.cards.BasicCard.normalAttackOnHero()'],['../classminihearthstone_1_1entities_1_1cards_1_1_card.html#a4901e9bd296d0f06dedee0256e3c240e',1,'minihearthstone.entities.cards.Card.normalAttackOnHero()'],['../interfaceminihearthstone_1_1entities_1_1cards_1_1_i_card.html#a45bd7edcf2c95170097fd9dcdab58982',1,'minihearthstone.entities.cards.ICard.normalAttackOnHero()']]],
+  ['normalattackonservant',['normalAttackOnServant',['../classminihearthstone_1_1entities_1_1cards_1_1_basic_card.html#a646372a9c88f28e88bf8608512054e29',1,'minihearthstone.entities.cards.BasicCard.normalAttackOnServant()'],['../classminihearthstone_1_1entities_1_1cards_1_1_card.html#a1fca3d3b1f748c9122dfd2ce3ed066f9',1,'minihearthstone.entities.cards.Card.normalAttackOnServant()'],['../interfaceminihearthstone_1_1entities_1_1cards_1_1_i_card.html#a1581c22592e50c1af1b6bcd2e108e2ce',1,'minihearthstone.entities.cards.ICard.normalAttackOnServant()']]]
+];

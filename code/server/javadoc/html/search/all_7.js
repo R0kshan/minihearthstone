@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['haschosenhero',['hasChosenHero',['../classminihearthstone_1_1controller_1_1_client_proxy.html#a8da8b4988ddb316d2e81196324f91587',1,'minihearthstone::controller::ClientProxy']]],
+  ['hero',['Hero',['../classminihearthstone_1_1entities_1_1heroes_1_1_hero.html',1,'minihearthstone.entities.heroes.Hero'],['../classminihearthstone_1_1entities_1_1heroes_1_1_hero.html#a5fe816074102e91d66e76a3ce9d9d4ac',1,'minihearthstone.entities.heroes.Hero.Hero()'],['../classminihearthstone_1_1entities_1_1heroes_1_1_hero.html#a1903f5fff795ccf1b10e2fcc68fa79bb',1,'minihearthstone.entities.heroes.Hero.Hero(String name, String type, String skillType, AbstractSpecificHero specificHero, String description)']]],
+  ['hero_2ejava',['Hero.java',['../_hero_8java.html',1,'']]],
+  ['heroattackhero',['heroAttackHero',['../classminihearthstone_1_1controller_1_1_client_proxy.html#ae996ae65210024de4eadc171414cd140',1,'minihearthstone.controller.ClientProxy.heroAttackHero()'],['../classminihearthstone_1_1facade_1_1_facade.html#a7100642cb06f8a1b9e4a88d142686954',1,'minihearthstone.facade.Facade.heroAttackHero()'],['../interfaceminihearthstone_1_1facade_1_1_i_facade.html#a591559c9dab15841c05feea554b95a5a',1,'minihearthstone.facade.IFacade.heroAttackHero()']]],
+  ['heroattackservant',['heroAttackServant',['../classminihearthstone_1_1controller_1_1_client_proxy.html#a9c741e67695063591d76b4289e4296bc',1,'minihearthstone.controller.ClientProxy.heroAttackServant()'],['../classminihearthstone_1_1facade_1_1_facade.html#aacba6b3688c522265ff24954b6daed26',1,'minihearthstone.facade.Facade.heroAttackServant()'],['../interfaceminihearthstone_1_1facade_1_1_i_facade.html#aed315acc07a9b1282219bd8365c21c78',1,'minihearthstone.facade.IFacade.heroAttackServant()']]],
+  ['herorepository',['HeroRepository',['../interfaceminihearthstone_1_1entities_1_1heroes_1_1_hero_repository.html',1,'minihearthstone::entities::heroes']]],
+  ['herorepository_2ejava',['HeroRepository.java',['../_hero_repository_8java.html',1,'']]]
+];
