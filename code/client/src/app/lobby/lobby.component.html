@@ -1,0 +1,39 @@
+<button style="float:right" class="btn btn-danger" (click)="logout()">Logout</button>
+
+<h1>Welcome to the lobby</h1>
+<h2>Choose your hero!</h2>
+
+
+
+<div class="heroes">
+  <div class="herodiv" *ngFor="let hero of heroes" (mouseenter)="heroHoverSound()">
+    <div class="card" (click)="chooseHero(hero)">
+      <img class="card-img-top" src="../assets/heroes/{{hero.type}}_preview.svg" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title" style="text-align: center;">{{hero.name}}</h4>
+        <p class="card-text">
+          <span style="text-transform: capitalize">{{hero.type}}</span><br>
+          {{hero.description}}</p>
+        <!--<button (click)="chooseHero(hero.id)">Choose hero</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="gameStartNotificationModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Hero choice</h2>
+      <span (click)="hideGameStartNotificationModal()" class="close">&times;</span>
+    </div>
+    <div id="serverMessageForHeroChoice" class="modal-body">
+      <p>Game starting ...</p>
+      <!-- Server message -->
+    </div>
+
+  </div>
+
+</div>

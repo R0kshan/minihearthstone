@@ -1,0 +1,42 @@
+<div style="text-align: right;">
+  <button class="btn btn-danger" (click)="logout();">Logout</button>
+</div>
+
+<div id="centered">
+  <h1>Dashboard</h1>
+
+  <h2 id="title">Welcome to MiniHearthStone {{player.name}}</h2>
+
+  <div id="btnMenu">
+    <!--<button class="btn btn-primary" (click)="getMatch();">Get match!</button>-->
+    <button class="btn btn-primary" (click)="findRandomMatch();">Find random match</button>
+  </div>
+</div>
+
+<!-- Fonction de test ci-dessous -->
+<!--
+<button (click)="getPlayer();">Get player name</button>
+<button (click)="getAllPlayers();">Get all players</button>
+<button (click)="getFirstHandOfCards();">Get first hand of cards</button>
+-->
+
+<!-- The Modal -->
+<div id="matchProposalModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Match proposal</h2>
+      <span (click)="hideMatchProposalModal()" class="close">&times;</span>
+    </div>
+    <div id="serverMessage" class="modal-body">
+      <p>Do you accept the challenge from PlayerName ?</p>
+      <!-- Server message -->
+    </div>
+    <div class="modal-footer">
+      <button id="okBtn" class="btn btn-success" (click)="hideMatchProposalModal()">Ok</button>
+      <button id="cancelMatchRequestBtn" class="btn btn-danger" (click)="rejectMatch()">Abort</button>
+    </div>
+  </div>
+
+</div>

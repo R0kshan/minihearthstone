@@ -1,0 +1,16 @@
+.messages-container {
+    background-color: azure;
+    color:black;
+}
+
+.message {
+    border-bottom: 1px solid darkgray;
+}
+
+#chatModal {
+    max-height: 90%;
+}
+
+.messages-container {
+    overflow-y: scroll;
+}

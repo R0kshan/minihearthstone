@@ -1,0 +1,19 @@
+h1, h2 {
+  text-align: center;
+}
+
+#btnMenu {
+  text-align: center;
+}
+
+#acceptMatchBtn, #acceptMatchRequestBtn, #okBtn  {
+    display:none;
+}
+  
+#centered {
+  margin-top: 10%;
+}
+
+button {
+  margin-right:1em;
+}

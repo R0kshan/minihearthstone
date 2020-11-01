@@ -1,0 +1,28 @@
+#Logo {
+  max-width: 90%;
+}
+#main-menu-btn {
+  opacity: 0.80;
+  border-width: 5px;
+  margin: 0 25% 0 25%;
+}
+
+/* You can add global styles to this file, and also import other style files */
+#main-menu {
+  /*background-image: url(../../assets/main-background.jpg);*/
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+img {
+  margin-top: 5em;
+}
+
+@media screen and (max-width: 500px) {
+  #main-menu-btn {
+    width: 90%;
+    margin: 1em;
+  }
+}

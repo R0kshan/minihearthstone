@@ -1,0 +1,60 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<router-outlet></router-outlet>
+
+
+<!-- The Modal -->
+<div id="generalNotificationModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Server message</h2>
+      <span (click)="hideGeneralNotificationModal()" class="close">&times;</span>
+    </div>
+    <div id="serverNotificationMessage" class="modal-body">
+      <!-- Server message -->
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- The Modal -->
+<div id="chatModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Chat</h2>
+      <span (click)="hideChatModal()" class="close">&times;</span>
+    </div>
+    <div id="serverNotificationMessage" class="modal-body">
+      <!-- Messages -->
+      <div class="messages-container">
+
+        <div class="message" *ngFor="let message of messages">
+          <span class="sender">{{message.sender}} : </span>
+          <span class="message-content">{{message.content}}</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">You</span>
+        </div>
+        <input id="message" type="text" class="form-control" placeholder="Write your message to the other player"
+          aria-label="Message to other player" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary input-group-text" id="basic-addon2" (click)="sendMessage()">Send <i
+              class="fa fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

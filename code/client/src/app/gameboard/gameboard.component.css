@@ -1,0 +1,438 @@
+.gbwrapper {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.playerzone {
+    /*background-color: gray;*/
+    background-image: url('/assets/textures/playerzone.png');
+    background-repeat: repeat;
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#countdown {
+   /* font-family: countdown;   */
+   text-align: center;
+   color: red;
+   padding: 0.5em;
+   font-size: 30px;
+}
+
+#opponentzone {
+    height:20%;
+}
+
+#myzone {
+    height:40%;
+}
+
+.playerzonetop {
+    display: flex;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.fightzone {
+    /*background-color: #F4A460;*/
+    background-image: url('/assets/textures/fightzone.png');
+    background-repeat: repeat;
+    border-top:1px solid #F3CD2C;
+    border-bottom:1px solid #F3CD2C;
+    width:100%;
+    height:40%;
+    display:flex;
+    padding-bottom: 0.7em;
+}
+
+.fightzoneground {
+    width:100%;
+}
+
+.division {
+    height: 50%;
+    /*border:1px solid black;*/
+}
+
+.fightzoneside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+	align-items: stretch;
+}
+
+.fightzoneside button {
+    margin-right: 0.4em;
+}
+
+
+.heropreview {
+    position: relative;
+    width:5em;
+    margin-left: auto;
+    margin-right:auto;
+    /*border: 1px solid;*/
+}
+
+#heroOpponent:hover {
+    cursor:hover;
+}
+
+.herospecial {
+    border: 1px solid;
+    border-radius: 5em;    
+    height: 3em;
+    width:3em;
+    margin: 0.5em;
+}
+
+.herospecial img {
+    border-radius: 5em;
+}
+
+.lifepoints {
+    border-top: 1px solid;
+    text-align: center;
+    font-size: 10px;
+    min-width: max-content;
+}
+
+.playercards {
+    margin-top: 0.5em;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.cardcontainer {
+    flex-grow:1;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:0.5em;
+    max-width: 5em;
+    /*background-color: darkslategrey;*/
+    border: 1px solid #F3CD2C;
+    color: black;
+    background-color: grey;
+    position: relative;
+    min-width: 5em;
+}
+
+.cardinfo {
+    width: 100%;
+}
+
+.active-card {
+    box-shadow: 0 4px 8px 0, 0 6px 20px 0 #F3CD2C;
+}
+
+.active-skill {
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 #F3CD2C;
+}
+
+.spell-card {
+    border: 1px solid #9500FF !important;
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 #9500FF !important;
+}
+
+.targeted-card {
+    border: 1px solid red !important;
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 red !important;
+}
+
+.selected-card-in-hand {
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 #F3CD2C !important;
+}
+
+.cardcontainer:hover {
+    cursor:pointer;
+}
+
+.cardimg {
+    width: 50%;
+    margin: 0.2em;
+}
+
+.cardtitle, .cardspecs, .carddescription {
+    font-size: 11px;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+.cardswrapper {
+   display:flex;
+   width: min-content;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.specs-icon {
+    height: 1em;
+    width:1em;
+}
+
+.playername {
+    text-align: center;
+}
+
+#myspecial:hover {
+    cursor:pointer;
+}
+
+.tooltipcontainer {
+    cursor: pointer;
+}
+
+.tooltipcontainer:hover .tooltiptext {
+    visibility:visible;
+}
+
+.tooltiptext {
+    visibility:hidden;
+    width: 120px;
+    background-color: deepskyblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+    position: relative;
+    opacity: 0.7;
+  }
+
+  .tooltip-arrow-down {
+    bottom: 400%;
+  }
+
+  .tooltip-arrow-up {
+    top: 20%;
+  }
+
+  .tooltip-arrow-down::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: deepskyblue transparent transparent transparent;
+  }
+
+  .tooltip-arrow-up::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent deepskyblue transparent;
+  }
+
+  /* Help modal*/
+
+
+  /* The Modal (background) */
+.help-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .help-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    color:black !important;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    height: 90%;
+    overflow-y: scroll;
+  }
+
+  .sword-clash, .wound {
+      position: absolute;
+  }
+
+  .card-sword-clash, .card-wound {
+    right: 2%;
+    top: 10%;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .help-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .help-close:hover,
+  .help-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .help-modal-header {
+    padding: 2px 16px;
+    background-color: lightseagreen;
+    color: white;
+  }
+  
+  .help-modal-body {padding: 2px 16px;}
+  
+  .help-modal-footer {
+    padding: 2px 16px;
+    background-color: lightseagreen;
+    color: white;
+  }
+
+  .card-speaker {
+    position: absolute;
+    right: 0;
+    margin-top: 0.1em;
+    margin-right: 0.1em;
+    font-size: 13px;
+  }
+
+  .card-tooltip {
+    position: absolute;
+    left: 0;
+    margin-top: 0.1em;
+    margin-right: 0.1em;
+    font-size: 13px;
+  }
+
+  .card-speaker:hover, .card-tooltip:hover {
+    color:#ffc107;
+    cursor: pointer;
+  }
+
+  
+
+  
+
+  @media screen and (max-width: 500px) {
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .playername {
+        font-size:14px;
+    }
+    .herospecial {
+        width: 2em;
+        height: 2em;
+    }
+
+    .heropreview {
+        width: 4em;
+        position: relative;
+    }
+
+    .btn {
+        font-size: 0.6em;
+        padding: 0.3em;
+    }
+
+    #countdown {
+        font-size: 16px;
+    }
+
+    .cardcontainer {
+        font-size: 8px;
+        min-width: 7.5em;
+        max-width: fit-content;
+    }
+
+    #opponentzone {
+        height: 15%;
+    }
+
+    .division .cardswrapper {
+        height: 95%;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+
+    #opponentzone {
+        height: fit-content;
+    }
+
+    .playerzonetop {
+        height: fit-content;
+    }
+
+    .playername {
+        font-size:14px;
+    }
+
+      .heropreview {
+        width: 3em;
+      }
+
+      .herospecial {
+        height: 1.7em;
+        width: 1.7em;
+      }
+
+      .btn {
+        font-size: 0.6em;
+        padding: 0.3em;
+        }
+        #countdown {
+            font-size: 16px;
+        }
+
+        .cardcontainer {
+            min-width: 4em;
+        }
+
+        .cardimg {
+            width: 30%;
+        }
+  }

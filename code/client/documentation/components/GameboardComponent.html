@@ -1,0 +1,4312 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>minihearthstone documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">minihearthstone documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>GameboardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/gameboard/gameboard.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-gameboard</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./gameboard.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./gameboard.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cardsOnGround">cardsOnGround</a>
+                            </li>
+                            <li>
+                                <a href="#facade">facade</a>
+                            </li>
+                            <li>
+                                <a href="#gameDuration">gameDuration</a>
+                            </li>
+                            <li>
+                                <a href="#handOfCards">handOfCards</a>
+                            </li>
+                            <li>
+                                <a href="#hero">hero</a>
+                            </li>
+                            <li>
+                                <a href="#mytimer">mytimer</a>
+                            </li>
+                            <li>
+                                <a href="#myturn">myturn</a>
+                            </li>
+                            <li>
+                                <a href="#opponent">opponent</a>
+                            </li>
+                            <li>
+                                <a href="#opponentCardsOnGround">opponentCardsOnGround</a>
+                            </li>
+                            <li>
+                                <a href="#opponentHero">opponentHero</a>
+                            </li>
+                            <li>
+                                <a href="#player">player</a>
+                            </li>
+                            <li>
+                                <a href="#restartTimerCallingEndOfTurn">restartTimerCallingEndOfTurn</a>
+                            </li>
+                            <li>
+                                <a href="#restartTimerSimple">restartTimerSimple</a>
+                            </li>
+                            <li>
+                                <a href="#selectedCardInHand">selectedCardInHand</a>
+                            </li>
+                            <li>
+                                <a href="#selectedHeroSpecial">selectedHeroSpecial</a>
+                            </li>
+                            <li>
+                                <a href="#selectedOpponentHero">selectedOpponentHero</a>
+                            </li>
+                            <li>
+                                <a href="#selectedOpponentServant">selectedOpponentServant</a>
+                            </li>
+                            <li>
+                                <a href="#selectedServant">selectedServant</a>
+                            </li>
+                            <li>
+                                <a href="#timer">timer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cardInHandOnMouseEnterEffect">cardInHandOnMouseEnterEffect</a>
+                            </li>
+                            <li>
+                                <a href="#cardInHandOnMouseLeaveEffect">cardInHandOnMouseLeaveEffect</a>
+                            </li>
+                            <li>
+                                <a href="#checkPreActionEffects">checkPreActionEffects</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#countdownCallingEndOfTurn">countdownCallingEndOfTurn</a>
+                            </li>
+                            <li>
+                                <a href="#decodeAllURICardNames">decodeAllURICardNames</a>
+                            </li>
+                            <li>
+                                <a href="#endMyTurn">endMyTurn</a>
+                            </li>
+                            <li>
+                                <a href="#hideGameboardMessagesModal">hideGameboardMessagesModal</a>
+                            </li>
+                            <li>
+                                <a href="#hideHeroSwordClash">hideHeroSwordClash</a>
+                            </li>
+                            <li>
+                                <a href="#hideHeroWound">hideHeroWound</a>
+                            </li>
+                            <li>
+                                <a href="#hideServantWound">hideServantWound</a>
+                            </li>
+                            <li>
+                                <a href="#launchAttackAnimation">launchAttackAnimation</a>
+                            </li>
+                            <li>
+                                <a href="#logout">logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#playCardInfo">playCardInfo</a>
+                            </li>
+                            <li>
+                                <a href="#playServantCardInfo">playServantCardInfo</a>
+                            </li>
+                            <li>
+                                <a href="#quitGame">quitGame</a>
+                            </li>
+                            <li>
+                                <a href="#removeSpacings">removeSpacings</a>
+                            </li>
+                            <li>
+                                <a href="#resetSelection">resetSelection</a>
+                            </li>
+                            <li>
+                                <a href="#selectCardInHand">selectCardInHand</a>
+                            </li>
+                            <li>
+                                <a href="#selectHerospecial">selectHerospecial</a>
+                            </li>
+                            <li>
+                                <a href="#selectServant">selectServant</a>
+                            </li>
+                            <li>
+                                <a href="#selectTargetHero">selectTargetHero</a>
+                            </li>
+                            <li>
+                                <a href="#selectTargetServant">selectTargetServant</a>
+                            </li>
+                            <li>
+                                <a href="#showChatModal">showChatModal</a>
+                            </li>
+                            <li>
+                                <a href="#showGameboardMessagesModal">showGameboardMessagesModal</a>
+                            </li>
+                            <li>
+                                <a href="#showHelp">showHelp</a>
+                            </li>
+                            <li>
+                                <a href="#showHeroSwordClash">showHeroSwordClash</a>
+                            </li>
+                            <li>
+                                <a href="#showHeroWound">showHeroWound</a>
+                            </li>
+                            <li>
+                                <a href="#showServantWound">showServantWound</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#simpleCountdown">simpleCountdown</a>
+                            </li>
+                            <li>
+                                <a href="#targetedCardOnMouseEnterEffect">targetedCardOnMouseEnterEffect</a>
+                            </li>
+                            <li>
+                                <a href="#targetedCardOnMouseLeaveEffect">targetedCardOnMouseLeaveEffect</a>
+                            </li>
+                            <li>
+                                <a href="#updateBrowserInteface">updateBrowserInteface</a>
+                            </li>
+                            <li>
+                                <a href="#waitForGameBoardUpdate">waitForGameBoardUpdate</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(newFacade: <a href="../injectables/FacadeImpl.html">FacadeImpl</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/gameboard/gameboard.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>newFacade</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FacadeImpl.html" target="_self" >FacadeImpl</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code><p>Web client facade</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cardInHandOnMouseEnterEffect"></a>
+                    <span class="name">
+                        <b>
+                            cardInHandOnMouseEnterEffect
+                        </b>
+                        <a href="#cardInHandOnMouseEnterEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cardInHandOnMouseEnterEffect(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="628"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:628</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cardInHandOnMouseLeaveEffect"></a>
+                    <span class="name">
+                        <b>
+                            cardInHandOnMouseLeaveEffect
+                        </b>
+                        <a href="#cardInHandOnMouseLeaveEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cardInHandOnMouseLeaveEffect(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="632"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:632</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPreActionEffects"></a>
+                    <span class="name">
+                        <b>
+                            checkPreActionEffects
+                        </b>
+                        <a href="#checkPreActionEffects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPreActionEffects(target: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="562"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:562</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if there are any blocking effects before performing an attack on target card</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>target</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>target card</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countdownCallingEndOfTurn"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            countdownCallingEndOfTurn
+                        </b>
+                        <a href="#countdownCallingEndOfTurn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>countdownCallingEndOfTurn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Automatically ends the player&#39;s turn when the countdown reaches 0</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="decodeAllURICardNames"></a>
+                    <span class="name">
+                        <b>
+                            decodeAllURICardNames
+                        </b>
+                        <a href="#decodeAllURICardNames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>decodeAllURICardNames(cards: <a href="../classes/Card.html">Card[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="576"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:576</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Replace all %20 by whitespaces in card names</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cards</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>list of cards</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="endMyTurn"></a>
+                    <span class="name">
+                        <b>
+                            endMyTurn
+                        </b>
+                        <a href="#endMyTurn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>endMyTurn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="249"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:249</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>End my turn and clear timeout for next round</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideGameboardMessagesModal"></a>
+                    <span class="name">
+                        <b>
+                            hideGameboardMessagesModal
+                        </b>
+                        <a href="#hideGameboardMessagesModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideGameboardMessagesModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="547"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:547</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Hide gameboard message modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideHeroSwordClash"></a>
+                    <span class="name">
+                        <b>
+                            hideHeroSwordClash
+                        </b>
+                        <a href="#hideHeroSwordClash"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideHeroSwordClash()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="640"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:640</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideHeroWound"></a>
+                    <span class="name">
+                        <b>
+                            hideHeroWound
+                        </b>
+                        <a href="#hideHeroWound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideHeroWound(heroUniqueId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="648"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:648</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>heroUniqueId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideServantWound"></a>
+                    <span class="name">
+                        <b>
+                            hideServantWound
+                        </b>
+                        <a href="#hideServantWound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideServantWound(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="656"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:656</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="launchAttackAnimation"></a>
+                    <span class="name">
+                        <b>
+                            launchAttackAnimation
+                        </b>
+                        <a href="#launchAttackAnimation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>launchAttackAnimation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="660"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:660</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <b>
+                            logout
+                        </b>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="539"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:539</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Logout</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Lifecycle hook</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playCardInfo"></a>
+                    <span class="name">
+                        <b>
+                            playCardInfo
+                        </b>
+                        <a href="#playCardInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playCardInfo(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="608"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:608</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playServantCardInfo"></a>
+                    <span class="name">
+                        <b>
+                            playServantCardInfo
+                        </b>
+                        <a href="#playServantCardInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playServantCardInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="612"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:612</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="quitGame"></a>
+                    <span class="name">
+                        <b>
+                            quitGame
+                        </b>
+                        <a href="#quitGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>quitGame()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="601"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:601</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Send quit game request to server</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSpacings"></a>
+                    <span class="name">
+                        <b>
+                            removeSpacings
+                        </b>
+                        <a href="#removeSpacings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeSpacings(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="690"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:690</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>str</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetSelection"></a>
+                    <span class="name">
+                        <b>
+                            resetSelection
+                        </b>
+                        <a href="#resetSelection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetSelection()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="528"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:528</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reset all object selection in interface</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectCardInHand"></a>
+                    <span class="name">
+                        <b>
+                            selectCardInHand
+                        </b>
+                        <a href="#selectCardInHand"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectCardInHand(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="479"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:479</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Select card in hand</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>select my card in hand</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectHerospecial"></a>
+                    <span class="name">
+                        <b>
+                            selectHerospecial
+                        </b>
+                        <a href="#selectHerospecial"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectHerospecial()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="275"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:275</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Select hero special skill</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectServant"></a>
+                    <span class="name">
+                        <b>
+                            selectServant
+                        </b>
+                        <a href="#selectServant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectServant(servant: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="318"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:318</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Select my servant</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>servant</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>my servant card</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectTargetHero"></a>
+                    <span class="name">
+                        <b>
+                            selectTargetHero
+                        </b>
+                        <a href="#selectTargetHero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectTargetHero(target: <a href="../classes/Hero.html">Hero</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="419"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:419</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Select opponent hero as target</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>target</td>
+                                    <td>
+                                                <code><a href="../classes/Hero.html" target="_self" >Hero</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>opponent hero</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectTargetServant"></a>
+                    <span class="name">
+                        <b>
+                            selectTargetServant
+                        </b>
+                        <a href="#selectTargetServant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectTargetServant(target: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:351</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Select target servant (belonging to opponent)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>target</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>target card</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showChatModal"></a>
+                    <span class="name">
+                        <b>
+                            showChatModal
+                        </b>
+                        <a href="#showChatModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showChatModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="593"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:593</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show chat modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showGameboardMessagesModal"></a>
+                    <span class="name">
+                        <b>
+                            showGameboardMessagesModal
+                        </b>
+                        <a href="#showGameboardMessagesModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showGameboardMessagesModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="554"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:554</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show gameboard messaged modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHelp"></a>
+                    <span class="name">
+                        <b>
+                            showHelp
+                        </b>
+                        <a href="#showHelp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showHelp()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="586"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:586</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show help modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHeroSwordClash"></a>
+                    <span class="name">
+                        <b>
+                            showHeroSwordClash
+                        </b>
+                        <a href="#showHeroSwordClash"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showHeroSwordClash()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="636"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:636</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHeroWound"></a>
+                    <span class="name">
+                        <b>
+                            showHeroWound
+                        </b>
+                        <a href="#showHeroWound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showHeroWound(heroUniqueId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="644"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:644</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>heroUniqueId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showServantWound"></a>
+                    <span class="name">
+                        <b>
+                            showServantWound
+                        </b>
+                        <a href="#showServantWound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showServantWound(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="652"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:652</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="simpleCountdown"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            simpleCountdown
+                        </b>
+                        <a href="#simpleCountdown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>simpleCountdown()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Start simple coutdown while other player is player (to show how much time left before this player can play)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="targetedCardOnMouseEnterEffect"></a>
+                    <span class="name">
+                        <b>
+                            targetedCardOnMouseEnterEffect
+                        </b>
+                        <a href="#targetedCardOnMouseEnterEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>targetedCardOnMouseEnterEffect(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="618"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:618</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="targetedCardOnMouseLeaveEffect"></a>
+                    <span class="name">
+                        <b>
+                            targetedCardOnMouseLeaveEffect
+                        </b>
+                        <a href="#targetedCardOnMouseLeaveEffect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>targetedCardOnMouseLeaveEffect(card: <a href="../classes/Card.html">Card</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="623"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:623</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>card</td>
+                                    <td>
+                                                <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBrowserInteface"></a>
+                    <span class="name">
+                        <b>
+                            updateBrowserInteface
+                        </b>
+                        <a href="#updateBrowserInteface"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateBrowserInteface(that)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="232"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:232</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Update the component view using properties from gameboard sent from server</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>that</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>reference this &#39;this&#39;</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="waitForGameBoardUpdate"></a>
+                    <span class="name">
+                        <b>
+                            waitForGameBoardUpdate
+                        </b>
+                        <a href="#waitForGameBoardUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>waitForGameBoardUpdate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/gameboard/gameboard.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>If still hasn&#39;t received gameboard update, wait 1000ms before resending gameboard update request</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cardsOnGround"></a>
+                        <span class="name">
+                            <b>
+                            cardsOnGround</b>
+                            <a href="#cardsOnGround"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/gameboard/gameboard.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="facade"></a>
+                        <span class="name">
+                            <b>
+                            facade</b>
+                            <a href="#facade"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/FacadeImpl.html" target="_self" >FacadeImpl</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/gameboard/gameboard.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gameDuration"></a>
+                        <span class="name">
+                            <b>
+                            gameDuration</b>
+                            <a href="#gameDuration"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>120</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/gameboard/gameboard.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="handOfCards"></a>
+                        <span class="name">
+                            <b>
+                            handOfCards</b>
+                            <a href="#handOfCards"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/gameboard/gameboard.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hero"></a>
+                        <span class="name">
+                            <b>
+                            hero</b>
+                            <a href="#hero"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Hero.html" target="_self" >Hero</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/gameboard/gameboard.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mytimer"></a>
+                        <span class="name">
+                            <b>
+                            mytimer</b>
+                            <a href="#mytimer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/gameboard/gameboard.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="myturn"></a>
+                        <span class="name">
+                            <b>
+                            myturn</b>
+                            <a href="#myturn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/gameboard/gameboard.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="opponent"></a>
+                        <span class="name">
+                            <b>
+                            opponent</b>
+                            <a href="#opponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Player.html" target="_self" >Player</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/gameboard/gameboard.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="opponentCardsOnGround"></a>
+                        <span class="name">
+                            <b>
+                            opponentCardsOnGround</b>
+                            <a href="#opponentCardsOnGround"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/gameboard/gameboard.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="opponentHero"></a>
+                        <span class="name">
+                            <b>
+                            opponentHero</b>
+                            <a href="#opponentHero"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Hero.html" target="_self" >Hero</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/gameboard/gameboard.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="player"></a>
+                        <span class="name">
+                            <b>
+                            player</b>
+                            <a href="#player"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Player.html" target="_self" >Player</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/gameboard/gameboard.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="restartTimerCallingEndOfTurn"></a>
+                        <span class="name">
+                            <b>
+                            restartTimerCallingEndOfTurn</b>
+                            <a href="#restartTimerCallingEndOfTurn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/gameboard/gameboard.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="restartTimerSimple"></a>
+                        <span class="name">
+                            <b>
+                            restartTimerSimple</b>
+                            <a href="#restartTimerSimple"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/gameboard/gameboard.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedCardInHand"></a>
+                        <span class="name">
+                            <b>
+                            selectedCardInHand</b>
+                            <a href="#selectedCardInHand"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/gameboard/gameboard.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedHeroSpecial"></a>
+                        <span class="name">
+                            <b>
+                            selectedHeroSpecial</b>
+                            <a href="#selectedHeroSpecial"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/gameboard/gameboard.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedOpponentHero"></a>
+                        <span class="name">
+                            <b>
+                            selectedOpponentHero</b>
+                            <a href="#selectedOpponentHero"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Hero.html" target="_self" >Hero</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/gameboard/gameboard.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedOpponentServant"></a>
+                        <span class="name">
+                            <b>
+                            selectedOpponentServant</b>
+                            <a href="#selectedOpponentServant"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/gameboard/gameboard.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedServant"></a>
+                        <span class="name">
+                            <b>
+                            selectedServant</b>
+                            <a href="#selectedServant"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Card.html" target="_self" >Card</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/gameboard/gameboard.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timer"></a>
+                        <span class="name">
+                            <b>
+                            timer</b>
+                            <a href="#timer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/gameboard/gameboard.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FacadeImpl } from &#x27;../webclientfacade/facade-impl.service&#x27;;
+import { Player } from &#x27;../player/player&#x27;;
+import { Hero } from &#x27;../hero/hero&#x27;;
+import { Card } from &#x27;../card/card&#x27;;
+import * as $ from &#x27;jquery&#x27;;
+import { delay } from &#x27;q&#x27;;
+import &#x27;../../../node_modules/font-awesome/css/font-awesome.css&#x27;;
+import { Facade } from &#x27;../webclientfacade/facade&#x27;;
+import { playVictorySound } from &#x27;../webclientfacade/facade-properties&#x27;;
+
+
+
+
+
+@Component({
+  selector: &#x27;app-gameboard&#x27;,
+  templateUrl: &#x27;./gameboard.component.html&#x27;,
+  styleUrls: [&#x27;./gameboard.component.css&#x27;]
+})
+/**
+ * Gameboard component
+ */
+export class GameboardComponent implements OnInit {
+
+  player: Player;
+  hero: Hero;
+  opponent: Player;
+  opponentHero: Hero;
+  handOfCards: Card[];
+  cardsOnGround: Card[] &#x3D; [];
+  opponentCardsOnGround: Card[] &#x3D; [];
+  myturn: boolean;
+  mytimer;
+  timer: number;
+  gameDuration &#x3D; 120;  // game lasts 60s
+  restartTimerCallingEndOfTurn &#x3D; false;
+  restartTimerSimple &#x3D; false;
+  selectedServant: Card;          // selected card on figthing ground (my card)
+  selectedOpponentServant: Card;  // selected card on figthing ground (opponent&#x27;s card card)
+  selectedOpponentHero: Hero;     // selected opponent hero
+  selectedHeroSpecial &#x3D; false;    // selected hero special skill
+  selectedCardInHand: Card;
+  facade: FacadeImpl;
+
+  /**
+   * Constructor
+   * @param newFacade Web client facade
+   */
+  constructor(private newFacade: FacadeImpl) {
+    this.facade &#x3D; newFacade;
+  }
+
+  /**
+   * Lifecycle hook
+   */
+  ngOnInit() {
+
+    this.facade.playGameBoardBackgroundMusic();
+
+    this.player &#x3D; this.facade.getPlayer();
+
+    if (this.player &#x3D;&#x3D; null) {
+      window.location.href &#x3D; &#x27;/&#x27;;
+    }
+
+    this.opponent &#x3D; this.facade.getPlayerOpponent();
+    this.hero &#x3D; this.facade.getHero(this.player.clientId);
+    this.opponentHero &#x3D; this.facade.getHero(this.opponent.clientId);
+    this.handOfCards &#x3D; this.facade.getHandOfCards(this.player.clientId);
+
+    // Temporary solution to solve rare bug from server where there are more than 3 cards in hand from first hand
+    // console.log(&#x27;Hand of cards received : &#x27; + JSON.stringify(this.handOfCards));
+
+    if (this.handOfCards.length &gt; 3) {
+      // console.log(&#x27;There are &#x27; + this.handOfCards.length + &#x27; cards. Removing the extra cards from hand.&#x27;);
+      this.handOfCards &#x3D; this.handOfCards.slice(0, 2);
+    }
+
+    this.countdownCallingEndOfTurn();
+
+    console.log(&#x27;Current turn : &#x27; + this.facade.getTurn());
+
+    // If it&#x27;s not my turn continously wait for gameboard update from the server
+    if (this.facade.getTurn() !&#x3D;&#x3D; this.player.clientId) {
+      this.facade.setReception(false);
+      this.waitForGameBoardUpdate();
+      this.myturn &#x3D; false;
+      $(&#x27;#serverMessageGameBoard&#x27;).html(this.opponent.name + &#x27; is playing&#x27;);
+      $(&#x27;#serverMessageGameBoard&#x27;).show();
+
+    } else {
+      this.myturn &#x3D; true;
+    }
+
+    this.facade.checkConnection();
+  }
+
+  /**
+   * Automatically ends the player&#x27;s turn when the countdown reaches 0
+   */
+  async countdownCallingEndOfTurn() {
+
+    this.restartTimerCallingEndOfTurn &#x3D; false;
+    this.restartTimerSimple &#x3D; true;
+
+    this.timer &#x3D; this.gameDuration;
+    // console.log(&#x27;Countdown at : &#x27; + this.timer);
+    // console.log(&#x27;this.timer &gt;&#x3D; 0 ? &#x27; + (this.timer &gt;&#x3D; 0));
+
+    while (this.timer &gt; 0 &amp;&amp; this.facade.getState() &#x3D;&#x3D;&#x3D; &#x27;in-game&#x27;) {
+      if (this.restartTimerCallingEndOfTurn) {
+        break;
+      }
+      await delay(1000);
+      this.timer &#x3D; this.timer - 1;
+      // console.log(this.timer);
+    }
+
+    if (this.myturn) {
+      this.endMyTurn();
+    }
+
+  }
+
+  /**
+   * Start simple coutdown while other player is player (to show how much time left before this player can play)
+   */
+  async simpleCountdown() {
+
+    this.restartTimerCallingEndOfTurn &#x3D; true;
+    this.restartTimerSimple &#x3D; false;
+    this.timer &#x3D; this.gameDuration;
+
+    while (this.timer &gt; 0 &amp;&amp; this.facade.getState() &#x3D;&#x3D;&#x3D; &#x27;in-game&#x27;) {
+      if (this.restartTimerSimple) {
+        break;
+      }
+      await delay(1000);
+      this.timer &#x3D; this.timer - 1;
+    }
+  }
+
+  /**
+   * If still hasn&#x27;t received gameboard update, wait 1000ms before resending gameboard update request
+   */
+  waitForGameBoardUpdate() {
+    const that &#x3D; this;
+    setTimeout(function () {
+      // console.log(&#x27;Waiting for server response...&#x27;);
+      // console.log(&#x27;Current game state : &#x27; + that.facade.getState());
+      // console.log(&#x27;Current turn in gameboard : &#x27; + that.facade.getTurn());
+      // console.log(&#x27;My turn : &#x27; + that.myturn);
+
+      if (that.facade.getReception() &#x3D;&#x3D;&#x3D; true) {
+
+        // Remove all %20 from card names
+        that.decodeAllURICardNames(that.facade.getHandOfCards(that.player.clientId));
+        that.decodeAllURICardNames(that.facade.getCardsOnGround(that.player.clientId));
+        that.decodeAllURICardNames(that.facade.getOpponentCardsOnGround(that.player.clientId));
+
+        // Update this component&#x27;s interface with server response
+        that.handOfCards &#x3D; that.facade.getHandOfCards(that.player.clientId);
+        that.cardsOnGround &#x3D; that.facade.getCardsOnGround(that.player.clientId);
+        that.opponentCardsOnGround &#x3D; that.facade.getOpponentCardsOnGround(that.player.clientId);
+        that.player &#x3D; that.facade.getPlayerById(that.player.clientId);
+        that.hero &#x3D; that.facade.getHero(that.player.clientId);
+        that.opponentHero &#x3D; that.facade.getOpponentHero(that.player.clientId);
+        that.opponent &#x3D; that.facade.getPlayerById(that.opponent.clientId);
+
+
+
+        // If server gave more than 7 cards in hand make sure there are no more then 7
+        if (that.handOfCards.length &gt; 7) {
+          that.handOfCards &#x3D; that.handOfCards.slice(0, 6);
+        }
+
+        that.facade.setReception(false);
+
+        // enable end of turn button if it&#x27;s my turn
+        if (that.facade.getTurn() &#x3D;&#x3D;&#x3D; that.player.clientId &amp;&amp; that.myturn &#x3D;&#x3D;&#x3D; false) {
+          that.myturn &#x3D; true;
+
+          // End my turn in 60 secondes
+          that.countdownCallingEndOfTurn();
+        }
+
+        // Check if it&#x27;s the end of the game
+        if (that.facade.getWinner() !&#x3D;&#x3D; null) {
+          if (that.facade.getWinner() &#x3D;&#x3D;&#x3D; that.player.clientId) {
+            this.Facade.playVictorySound();
+            $(&#x27;#serverMessageGameBoard&#x27;).html(
+              &#x27;You\&#x27;ve won!&lt;br&gt;&#x27; +
+              &#x27;&lt;button class&#x3D;&quot;btn btn-success&quot; style&#x3D;&quot;margin-right:0.5em;&quot; (click)&#x3D;&quot;&quot;&gt;Return to dashboard&lt;/button&gt;&#x27; +
+              &#x27;&lt;button class&#x3D;&quot;btn btn-primary&quot;&gt;Chat with other player&lt;/button&gt;&#x27;);
+            that.handOfCards &#x3D; [];
+            that.cardsOnGround &#x3D; [];
+            that.opponentCardsOnGround &#x3D; [];
+          } else {
+            this.Facade.playDefeatSound();
+            $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;You loose!&#x27;);
+            that.handOfCards &#x3D; [];
+            that.cardsOnGround &#x3D; [];
+            that.opponentCardsOnGround &#x3D; [];
+          }
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+
+        that.launchAttackAnimation();
+        console.log(&#x27;Gameboard updated&#x27;);
+
+
+        // If it&#x27;s still not my turn to play that set reception to false and recall the function
+        if (that.facade.getTurn() !&#x3D;&#x3D; that.player.clientId) {
+          that.facade.setReception(false);
+          that.waitForGameBoardUpdate();
+        }
+      } else {
+
+        if (that.facade.getState() &#x3D;&#x3D;&#x3D; &#x27;in-game&#x27;) {
+          // Wait for gameboard update
+          that.waitForGameBoardUpdate();
+        }
+      }
+    }, 1000);
+  }
+
+  /**
+   * Update the component view using properties from gameboard sent from server
+   * @param that reference this &#x27;this&#x27;
+   */
+  updateBrowserInteface(that) {
+    // Update this component&#x27;s interface with server response
+    that.handOfCards &#x3D; this.facade.getHandOfCards(that.player.clientId);
+    that.cardsOnGround &#x3D; this.facade.getCardsOnGround(that.player.clientId);
+    that.opponentCardsOnGround &#x3D; this.facade.getOpponentCardsOnGround(that.player.clientId);
+    that.player &#x3D; this.facade.getPlayerById(that.player.clientId);
+    that.hero &#x3D; this.facade.getHero(that.player.clientId);
+    that.opponentHero &#x3D; this.facade.getOpponentHero(that.player.clientId);
+    that.opponent &#x3D; this.facade.getPlayerById(that.opponent.clientId);
+    this.facade.setReception(false);
+
+
+  }
+
+  /**
+   * End my turn and clear timeout for next round
+   */
+  endMyTurn() {
+
+    // If it&#x27;s my turn, send end my turn request to server and restart countdown
+    if (this.facade.getGameBoard().turn &#x3D;&#x3D;&#x3D; this.facade.getPlayer().clientId) {
+      this.myturn &#x3D; !this.myturn;
+      console.log(&#x27;End my turn : &#x27; + this.timer);
+      console.log(&#x27;Resetting countdown&#x27;);
+
+      this.simpleCountdown();
+
+      this.facade.setReception(false);
+      this.facade.endMyTurn();
+
+
+      // Wait for gameboard update from other player
+      this.waitForGameBoardUpdate();
+    } else {
+      this.resetSelection();
+      $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;It\&#x27;s not your turn yet!&#x27;);
+      $(&#x27;#gameboardMessagesModal&#x27;).show();
+    }
+  }
+
+  /**
+   * Select hero special skill
+   */
+  selectHerospecial() {
+
+    // Check if it&#x27;s my turn to play
+    if (this.facade.getGameBoard().turn &#x3D;&#x3D;&#x3D; this.facade.getPlayer().clientId) {
+
+      // Check if player has enough mana
+      if (this.player.mana - 2 &gt;&#x3D; 0) {
+
+        if (this.hero.canUseSpecialSkill) {
+          if (this.hero.skillType &#x3D;&#x3D;&#x3D; &#x27;self&#x27;) {
+
+            // Send skill activation to server
+            this.facade.useHeroSpecial();
+            this.facade.setReception(false);
+            this.resetSelection();
+            this.waitForGameBoardUpdate();
+
+          } else if (this.hero.skillType &#x3D;&#x3D;&#x3D; &#x27;targeted&#x27;) {
+            this.selectedHeroSpecial &#x3D; true;
+          }
+        } else {
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;Special skill already used. Please wait for next round&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+
+      } else {
+        this.resetSelection();
+        $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;Not enough mana!&#x27;);
+        $(&#x27;#gameboardMessagesModal&#x27;).show();
+      }
+
+    } else {
+      this.resetSelection();
+      $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;It\&#x27;s not your turn yet!&#x27;);
+      $(&#x27;#gameboardMessagesModal&#x27;).show();
+    }
+
+  }
+
+  /**
+   * Select my servant
+   * @param servant my servant card
+   */
+  selectServant(servant: Card) {
+    // Check if it&#x27;s my turn to play
+    if (this.facade.getGameBoard().turn &#x3D;&#x3D;&#x3D; this.facade.getPlayer().clientId) {
+
+      this.selectedServant &#x3D; servant;
+
+      if (this.selectedCardInHand &#x3D;&#x3D; null) {
+        if (this.selectedServant.canAttack &#x3D;&#x3D;&#x3D; true) {
+          console.log(&#x27;Selected servant : &#x27; + this.selectedServant.name);
+        } else {
+          this.selectedServant &#x3D; null;
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;This servant can\&#x27;t fight yet! Please wait for the next round&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      } else {
+        console.log(&#x27;applySpellCardOnServant()&#x27;);
+        // If selected servant is not null then call server method to apply the card&#x27;s in hand skill to servant
+        this.facade.applySpellCardOnFriendlyServant(this.selectedCardInHand.uniqueId, this.selectedServant.uniqueId);
+        this.facade.setReception(false);
+        this.resetSelection();
+        this.waitForGameBoardUpdate();
+      }
+    } else {
+      this.resetSelection();
+      $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;It\&#x27;s not your turn yet!&#x27;);
+      $(&#x27;#gameboardMessagesModal&#x27;).show();
+    }
+  }
+
+  /**
+   * Select target servant (belonging to opponent)
+   * @param target target card
+   */
+  selectTargetServant(target: Card) {
+
+    // Check if it&#x27;s my turn to play
+    if (this.facade.getGameBoard().turn &#x3D;&#x3D;&#x3D; this.facade.getPlayer().clientId) {
+
+      this.selectedOpponentServant &#x3D; target;
+
+      console.log(&#x27;Selected opponent servant : &#x27; + this.selectedOpponentServant.name);
+
+      // Check if it&#x27;s an attack on servant -&gt; servant
+      if (this.selectedServant !&#x3D; null &amp;&amp; this.selectedOpponentServant !&#x3D; null) {
+
+        // If checkPreActionEffects returns true, then no provocation effect
+        if (this.checkPreActionEffects(this.selectedOpponentServant)) {
+          console.log(&#x27;No provocation effects blocking&#x27;);
+
+          console.log(&#x27;card select card&#x27;);
+          this.facade.applyCardOnTargetServant(this.selectedServant.uniqueId, this.selectedOpponentServant.uniqueId);
+          this.facade.setReception(false);
+          this.selectedServant.canAttack &#x3D; false;
+          this.resetSelection();
+          this.waitForGameBoardUpdate();
+        } else {
+          this.resetSelection();
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;A servants\&#x27;s effect is blocking your attack&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      } else if (this.selectedHeroSpecial &amp;&amp; this.selectedOpponentServant !&#x3D; null) {
+
+        if (this.checkPreActionEffects(this.selectedOpponentServant)) {
+
+          // Else check if it&#x27;s an attack on hero spell -&gt; servant
+          console.log(&#x27;hero select card&#x27;);
+          this.facade.applyHeroSpecialOnServant(this.selectedOpponentServant.uniqueId);
+          this.facade.setReception(false);
+          this.resetSelection();
+          this.waitForGameBoardUpdate();
+        } else {
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;A servant with provocation effect is blocking your attack&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      } else if (this.selectedCardInHand &amp;&amp; this.selectedOpponentServant !&#x3D; null) {
+
+        if (this.checkPreActionEffects(this.selectedOpponentServant)) {
+
+          // Else check if it&#x27;s an attack on targeted spell card -&gt; servant
+          console.log(&#x27;targeted spell select card&#x27;);
+          this.facade.applySpellCardOnServant(this.selectedCardInHand.uniqueId, this.selectedOpponentServant.uniqueId);
+          this.facade.setReception(false);
+          this.resetSelection();
+          this.waitForGameBoardUpdate();
+        } else {
+          this.resetSelection();
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;A servants\&#x27;s effect is blocking your attack&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      }
+    } else {
+      this.resetSelection();
+      $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;It\&#x27;s not your turn yet!&#x27;);
+      $(&#x27;#gameboardMessagesModal&#x27;).show();
+    }
+  }
+
+  /**
+   * Select opponent hero as target
+   * @param target opponent hero
+   */
+  selectTargetHero(target: Hero) {
+
+    if (this.facade.getGameBoard().turn &#x3D;&#x3D;&#x3D; this.facade.getPlayer().clientId) {
+      this.selectedOpponentHero &#x3D; target;
+
+      console.log(&#x27;Selected opponent hero : &#x27; + this.selectedOpponentHero.name);
+
+      if (this.selectedServant !&#x3D; null &amp;&amp; this.selectedOpponentHero !&#x3D; null) {
+
+        if (this.checkPreActionEffects(null)) {
+          console.log(&#x27;card select hero&#x27;);
+          this.facade.applyCardOnTargetHero(this.selectedServant.uniqueId);
+          this.facade.setReception(false);
+          this.selectedServant.canAttack &#x3D; false;
+          this.resetSelection();
+          this.waitForGameBoardUpdate();
+        } else {
+          this.resetSelection();
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;A servants\&#x27;s effect is blocking your attack&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      } else if (this.selectedHeroSpecial &amp;&amp; this.selectedOpponentHero !&#x3D; null) {
+        // Else check if it&#x27;s an attack on hero spell  -&gt; hero
+        if (this.checkPreActionEffects(null)) {
+          console.log(&#x27;hero select hero&#x27;);
+          this.facade.applyHeroSpecialOnHero();
+          this.facade.setReception(false);
+          this.resetSelection();
+          this.waitForGameBoardUpdate();
+        } else {
+          this.resetSelection();
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;A servants\&#x27;s effect is blocking your attack&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      } else if (this.selectedCardInHand &amp;&amp; this.selectedOpponentHero !&#x3D; null) {
+
+        if (this.checkPreActionEffects(null)) {
+          // Else check if it&#x27;s an attack on targeted spell card -&gt; hero
+          console.log(&#x27;targeted spell selected hero&#x27;);
+          this.facade.applySpellCardOnHero(this.selectedCardInHand.uniqueId);
+          this.facade.setReception(false);
+          this.resetSelection();
+          this.waitForGameBoardUpdate();
+        } else {
+          this.resetSelection();
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;A servants\&#x27;s effect is blocking your attack&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+      }
+    } else {
+      this.resetSelection();
+      $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;It\&#x27;s not your turn yet!&#x27;);
+      $(&#x27;#gameboardMessagesModal&#x27;).show();
+    }
+  }
+
+  /**
+   * Select card in hand
+   * @param card  select my card in hand
+   */
+  selectCardInHand(card: Card) {
+
+    console.log(&#x27;selected card: &#x27; + card.name);
+
+    if (this.facade.getTurn() &#x3D;&#x3D;&#x3D; this.facade.getPlayer().clientId) {
+
+      // Check if it&#x27;s a targetSpell
+      if (card.nature &#x3D;&#x3D;&#x3D; &#x27;targetedSpell&#x27;) {
+        this.selectedCardInHand &#x3D; card;
+        console.log(&#x27;Selected target spell : &#x27; + this.selectedCardInHand.name);
+      } else {
+        console.log(&#x27;choose card : &#x27; + card.name);
+
+        // Check if player has enough mana
+        if (this.player.mana - card.manacost &gt;&#x3D; 0) {
+
+          // Check if number of cards on ground does not exceed the limit
+          if (this.cardsOnGround.length &lt; 7) {
+            // Update gameboard
+            this.facade.setReception(false);
+
+            // Send choice to facade
+            this.facade.chooseCard(card.uniqueId, card.nature);
+
+            // Wait for gameboard update from server
+            this.waitForGameBoardUpdate();
+          } else {
+            this.resetSelection();
+            $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;You can\&#x27;t have more then 7 cards on ground.&#x27;);
+            $(&#x27;#gameboardMessagesModal&#x27;).show();
+          }
+
+        } else {
+          this.resetSelection();
+          $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;Not enough mana!&#x27;);
+          $(&#x27;#gameboardMessagesModal&#x27;).show();
+        }
+
+      }
+    } else {
+      this.resetSelection();
+      $(&#x27;#serverMessageGameBoard&#x27;).html(&#x27;It\&#x27;s not your turn yet!&#x27;);
+      $(&#x27;#gameboardMessagesModal&#x27;).show();
+    }
+  }
+
+  /**
+   * Reset all object selection in interface
+   */
+  resetSelection() {
+    this.selectedServant &#x3D; null;
+    this.selectedOpponentServant &#x3D; null;
+    this.selectedOpponentHero &#x3D; null;
+    this.selectedHeroSpecial &#x3D; false;
+    this.selectedCardInHand &#x3D; null;
+  }
+
+  /**
+   * Logout
+   */
+  logout() {
+    this.facade.stopGameBoardBackgroundMusic();
+    this.facade.logout();
+  }
+
+  /**
+   * Hide gameboard message modal
+   */
+  hideGameboardMessagesModal() {
+    $(&#x27;#gameboardMessagesModal&#x27;).hide();
+  }
+
+  /**
+   * Show gameboard messaged modal
+   */
+  showGameboardMessagesModal() {
+    $(&#x27;#gameboardMessagesModal&#x27;).show();
+  }
+
+  /**
+   * Check if there are any blocking effects before performing an attack on target card
+   * @param target target card
+   */
+  checkPreActionEffects(target: Card): boolean {
+    let effectName &#x3D; &#x27;&#x27;;
+    if (target !&#x3D;&#x3D; null) {
+      if (target.effect !&#x3D;&#x3D; null) {
+        effectName &#x3D; target.effect.name;
+      }
+    }
+    return this.facade.performPreActionPlayerCardEffects(this.player.clientId, target, effectName);
+  }
+
+  /**
+   * Replace all %20 by whitespaces in card names
+   * @param cards list of cards
+   */
+  decodeAllURICardNames(cards: Card[]) {
+    cards.forEach(card &#x3D;&gt; {
+      card.name &#x3D; decodeURI(card.name);
+      console.log(card.name);
+    });
+  }
+
+  /**
+   * Show help modal
+   */
+  showHelp() {
+    $(&#x27;#helpModal&#x27;).show();
+  }
+
+  /**
+   * Show chat modal
+   */
+  showChatModal() {
+    $(&#x27;#chatModal&#x27;).show();
+    $(&#x27;#unreadMessages&#x27;).hide();
+  }
+
+  /**
+   * Send quit game request to server
+   */
+  quitGame() {
+    this.facade.stopGameBoardBackgroundMusic();
+    this.facade.quitGame();
+  }
+
+  // Sounds and music
+
+  playCardInfo(card: Card) {
+    this.facade.playCardInfo(card.name);
+  }
+
+  playServantCardInfo() {
+    this.facade.playServantCardInfo();
+  }
+
+  // Graphics
+
+  targetedCardOnMouseEnterEffect(card: Card) {
+    $(&#x27;#enemy_&#x27; + this.removeSpacings(card.uniqueId)).addClass(&#x27;targeted-card&#x27;);
+    $(&#x27;#servant_swordClash_&#x27; + this.removeSpacings(card.uniqueId)).show();
+  }
+
+  targetedCardOnMouseLeaveEffect(card: Card) {
+    $(&#x27;#enemy_&#x27; + this.removeSpacings(card.uniqueId)).removeClass(&#x27;targeted-card&#x27;);
+    $(&#x27;#servant_swordClash_&#x27; + this.removeSpacings(card.uniqueId)).hide();
+  }
+
+  cardInHandOnMouseEnterEffect(card: Card) {
+    $(&#x27;#card_in_hand_&#x27; + this.removeSpacings(card.uniqueId)).addClass(&#x27;selected-card-in-hand&#x27;);
+  }
+
+  cardInHandOnMouseLeaveEffect(card: Card) {
+    $(&#x27;#card_in_hand_&#x27; + this.removeSpacings(card.uniqueId)).removeClass(&#x27;selected-card-in-hand&#x27;);
+  }
+
+  showHeroSwordClash() {
+    $(&#x27;#hero_swordClash&#x27;).show();
+  }
+
+  hideHeroSwordClash() {
+    $(&#x27;#hero_swordClash&#x27;).hide();
+  }
+
+  showHeroWound(heroUniqueId: string) {
+    $(&#x27;#hero_wound_&#x27; + this.removeSpacings(heroUniqueId)).show();
+  }
+
+  hideHeroWound(heroUniqueId: string) {
+    $(&#x27;#hero_wound_&#x27; + this.removeSpacings(heroUniqueId)).hide();
+  }
+
+  showServantWound(card: Card) {
+    $(&#x27;#servant_wound_&#x27; + this.removeSpacings(card.uniqueId)).show();
+  }
+
+  hideServantWound(card: Card) {
+    $(&#x27;#servant_wound_&#x27; + this.removeSpacings(card.uniqueId)).hide();
+  }
+
+  launchAttackAnimation() {
+    console.log(&#x27;Attack animation launched!&#x27;);
+    const that &#x3D; this;
+    const heroAttacked &#x3D; this.facade.getHeroAttacked();
+    const attackedServants &#x3D; this.facade.getAttackedServants();
+    console.log(&#x27;Opponent hero : &#x27; + heroAttacked + &#x27; is attacked&#x27;);
+
+    if (heroAttacked) {
+      console.log(&#x27;Opponent hero is attacked!&#x27;);
+      that.showHeroWound(heroAttacked);
+      that.facade.playDamageSound();
+      setTimeout(function () {
+        that.hideHeroWound(heroAttacked);
+      }, 1000);
+    }
+    attackedServants.forEach(attackedServantUniqueId &#x3D;&gt; {
+      that.facade.playDamageSound();
+      $(&#x27;#servant_wound_&#x27; + that.removeSpacings(attackedServantUniqueId)).show();
+      document.getElementById(&#x27;servant_wound_&#x27; + that.removeSpacings(attackedServantUniqueId)).style.display &#x3D; &#x27;block&#x27;;
+      console.log(&#x27;#servant_wound_&#x27; + that.removeSpacings(attackedServantUniqueId));
+      setTimeout(function () {
+        $(&#x27;#servant_wound_&#x27; + that.removeSpacings(attackedServantUniqueId)).hide();
+        document.getElementById(&#x27;servant_wound_&#x27; + that.removeSpacings(attackedServantUniqueId)).style.display &#x3D; &#x27;none&#x27;;
+      }, 1000);
+    });
+  }
+
+
+  // Utilities
+
+  removeSpacings(str: string) {
+    return str.replace(/\s/g, &#x27;&#x27;);
+  }
+
+}
+
+
+/**
+ * Close modal if click detected is outside of modal
+ */
+window.onclick &#x3D; function (event) {
+  if (event.target &#x3D;&#x3D;&#x3D; document.getElementById(&#x27;gameboardMessagesModal&#x27;)) {
+    $(&#x27;#gameboardMessagesModal&#x27;).hide();
+  }
+  if (event.target &#x3D;&#x3D;&#x3D; document.getElementById(&#x27;helpModal&#x27;)) {
+    $(&#x27;#helpModal&#x27;).hide();
+  }
+
+};
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;gbwrapper&quot;&gt;
+
+  &lt;div id&#x3D;&quot;opponentzone&quot; class&#x3D;&quot;playerzone&quot;&gt;
+    &lt;button class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;logout()&quot; style&#x3D;&quot;float: right;
+    position: absolute;
+    right: 0%;
+    border-radius: 0;&quot;&gt;Logout&lt;/button&gt;
+    &lt;div class&#x3D;&quot;playerzonetop&quot;&gt;
+
+      &lt;div id&#x3D;&quot;heroOpponent&quot; style&#x3D;&quot;cursor: pointer;&quot; class&#x3D;&quot;heropreview&quot; (click)&#x3D;&quot;selectTargetHero(opponentHero)&quot;
+        (mouseenter)&#x3D;&quot;showHeroSwordClash()&quot; (mouseleave)&#x3D;&quot;hideHeroSwordClash()&quot;&gt;
+        &lt;div class&#x3D;&quot;playername&quot;&gt;{{opponent.name}}&lt;/div&gt;
+        &lt;img id&#x3D;&quot;hero_swordClash&quot; class&#x3D;&quot;sword-clash&quot; style&#x3D;&quot;display: none;&quot; src&#x3D;&quot;../assets/effects/sword-clash.svg&quot;
+          alt&#x3D;&quot;sword clash&quot;&gt;
+        &lt;img id&#x3D;&quot;hero_wound_{{removeSpacings(opponentHero.uniqueId)}}&quot; class&#x3D;&quot;wound&quot; style&#x3D;&quot;display: none;&quot;
+          src&#x3D;&quot;../assets/effects/wound.svg&quot; alt&#x3D;&quot;wound&quot;&gt;
+        &lt;img src&#x3D;&quot;../assets/heroes/{{opponentHero.type}}_preview.svg&quot; alt&#x3D;&quot;opponent hero preview&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;herospecs&quot;&gt;
+        &lt;div class&#x3D;&quot;herospecial tooltipcontainer&quot;&gt;
+          &lt;img src&#x3D;&quot;../assets/herospecial/fire-spell-cast.svg&quot; alt&#x3D;&quot;hero special attack&quot;&gt;
+          &lt;div class&#x3D;&quot;tooltiptext tooltip-arrow-up&quot;&gt;{{opponentHero.description}}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;lifepoints&quot;&gt;
+          Life : {{opponentHero.lifepoints}}/30&lt;br&gt;
+          Def : {{opponentHero.defense}}
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;manapoints&quot;&gt;
+        {{opponent.mana}}/{{opponent.stored_mana}}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;fightzone&quot;&gt;
+    &lt;div class&#x3D;&quot;fightzoneground&quot;&gt;
+      &lt;div id&#x3D;&quot;ennemyground&quot; class&#x3D;&quot;division&quot;&gt;
+        &lt;div class&#x3D;&quot;cardswrapper&quot;&gt;
+          &lt;div *ngFor&#x3D;&quot;let card of opponentCardsOnGround&quot; id&#x3D;&quot;enemy_{{removeSpacings(card.uniqueId)}}&quot;
+            (mouseenter)&#x3D;&quot;targetedCardOnMouseEnterEffect(card)&quot; (mouseleave)&#x3D;&quot;targetedCardOnMouseLeaveEffect(card)&quot;
+            class&#x3D;&quot;cardcontainer&quot; (click)&#x3D;&quot;selectTargetServant(card)&quot;&gt;
+
+            &lt;img id&#x3D;&quot;servant_swordClash_{{removeSpacings(card.uniqueId)}}&quot; class&#x3D;&quot;sword-clash card-sword-clash&quot;
+              style&#x3D;&quot;display: none;&quot; src&#x3D;&quot;../assets/effects/sword-clash.svg&quot; alt&#x3D;&quot;sword clash&quot;&gt;
+            &lt;img id&#x3D;&quot;servant_wound_{{removeSpacings(card.uniqueId)}}&quot; class&#x3D;&quot;wound card-wound&quot; style&#x3D;&quot;display: none;&quot;
+              src&#x3D;&quot;../assets/effects/wound.svg&quot; alt&#x3D;&quot;sword clash&quot;&gt;
+
+            &lt;img class&#x3D;&quot;cardimg&quot; src&#x3D;&quot;../assets/cards/{{card.name}}.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+            &lt;div class&#x3D;&quot;cardinfo&quot;&gt;
+              &lt;p class&#x3D;&quot;cardtitle&quot;&gt;{{card.name}}&lt;/p&gt;
+              &lt;p class&#x3D;&quot;cardspecs&quot;&gt;
+                {{card.manacost}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/mana.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+                {{card.damage}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/damage.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+                {{card.lifepoints}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/lifepoint.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;&lt;/p&gt;
+              &lt;p class&#x3D;&quot;carddescription&quot;&gt;{{card.description}}&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id&#x3D;&quot;myground&quot; class&#x3D;&quot;division&quot;&gt;
+        &lt;div class&#x3D;&quot;cardswrapper&quot;&gt;
+          &lt;div *ngFor&#x3D;&quot;let card of cardsOnGround&quot; class&#x3D;&quot;cardcontainer&quot;
+            [className]&#x3D;&quot;card.canAttack &#x3D;&#x3D;&#x3D; true ? &#x27;cardcontainer active-card&#x27; : &#x27;cardcontainer&#x27;&quot;
+            (click)&#x3D;&quot;selectServant(card)&quot;&gt;
+            &lt;img id&#x3D;&quot;servant_wound_{{removeSpacings(card.uniqueId)}}&quot; class&#x3D;&quot;wound card-wound&quot; style&#x3D;&quot;display: none;&quot;
+              src&#x3D;&quot;../assets/effects/wound.svg&quot; alt&#x3D;&quot;sword clash&quot;&gt;
+            &lt;div&gt;&lt;i (mouseenter)&#x3D;&quot;playServantCardInfo()&quot; class&#x3D;&quot;card-speaker fa fa-volume-up&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;img class&#x3D;&quot;cardimg&quot; src&#x3D;&quot;../assets/cards/{{card.name}}.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+            &lt;div class&#x3D;&quot;cardinfo&quot;&gt;
+              &lt;p class&#x3D;&quot;cardtitle&quot;&gt;{{card.name}}&lt;/p&gt;
+              &lt;p class&#x3D;&quot;cardspecs&quot;&gt;
+                {{card.manacost}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/mana.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+                {{card.damage}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/damage.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+                {{card.lifepoints}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/lifepoint.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;&lt;/p&gt;
+              &lt;p class&#x3D;&quot;carddescription&quot;&gt;{{card.description}}&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;fightzoneside&quot;&gt;
+      &lt;button class&#x3D;&quot;btn btn-success&quot; style&#x3D;&quot;margin-top: 1em;&quot; [disabled]&#x3D;!myturn id&#x3D;&quot;enemyTurnBtn&quot;
+        (click)&#x3D;&quot;endMyTurn()&quot;&gt;End my turn&lt;/button&gt;
+      &lt;!--button class&#x3D;&quot;btn btn-info&quot; id&#x3D;&quot;helpBtn&quot; (click)&#x3D;&quot;showHelp()&quot;&gt;How to play?&lt;/button&gt;&lt;br&gt;--&gt;
+      &lt;div id&#x3D;&quot;countdown&quot;&gt;{{timer}}&lt;/div&gt;
+      &lt;!--&lt;button class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;logout()&quot;&gt;Logout&lt;/button&gt;&lt;br&gt;--&gt;
+      &lt;button class&#x3D;&quot;btn btn-outline-danger&quot; (click)&#x3D;&quot;quitGame()&quot;&gt;Quit game&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id&#x3D;&quot;myzone&quot; class&#x3D;&quot;playerzone&quot;&gt;
+    &lt;div class&#x3D;&quot;playerzonetop&quot;&gt;
+      &lt;div class&#x3D;&quot;heropreview&quot;&gt;
+        &lt;div class&#x3D;&quot;playername&quot;&gt;{{player.name}}&lt;/div&gt;
+        &lt;img id&#x3D;&quot;hero_wound_{{removeSpacings(hero.uniqueId)}}&quot; class&#x3D;&quot;wound&quot; style&#x3D;&quot;display: none;&quot;
+          src&#x3D;&quot;../assets/effects/wound.svg&quot; alt&#x3D;&quot;wound&quot;&gt;
+        &lt;img src&#x3D;&quot;../assets/heroes/{{hero.type}}_preview.svg&quot; alt&#x3D;&quot;my hero preview&quot;&gt;
+        &lt;!--&lt;div class&#x3D;&quot;lifepoints&quot;&gt;
+          Life: {{hero.lifepoints}}/30&lt;br&gt;
+          Def: {{hero.defense}}
+        &lt;/div&gt;--&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;herospecs&quot;&gt;
+        &lt;div id&#x3D;&quot;myspecial&quot; class&#x3D;&quot;herospecial tooltipcontainer&quot; (click)&#x3D;&quot;selectHerospecial()&quot;
+          [className]&#x3D;&quot;hero.canUseSpecialSkill &#x3D;&#x3D;&#x3D; true ? &#x27;herospecial active-skill tooltipcontainer&#x27; : &#x27;herospecial tooltipcontainer&#x27;&quot;&gt;
+          &lt;img src&#x3D;&quot;../assets/herospecial/fire-spell-cast.svg&quot; alt&#x3D;&quot;hero special attack&quot;&gt;
+          &lt;div class&#x3D;&quot;tooltiptext tooltip-arrow-down&quot;&gt;{{hero.description}}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;lifepoints&quot;&gt;
+          Life: {{hero.lifepoints}}/30&lt;br&gt;
+          Def: {{hero.defense}}
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;manapoints&quot;&gt;
+        {{player.mana}}/{{player.stored_mana}}
+      &lt;/div&gt;
+
+
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;playercards&quot;&gt;
+      &lt;div class&#x3D;&quot;cardswrapper&quot;&gt;
+        &lt;div *ngFor&#x3D;&quot;let card of handOfCards&quot; id&#x3D;&quot;card_in_hand_{{removeSpacings(card.uniqueId)}}&quot;
+          class&#x3D;&quot;cardcontainer tooltipcontainer&quot; (click)&#x3D;&quot;selectCardInHand(card)&quot;
+          [className]&#x3D;&quot;card.nature !&#x3D;&#x3D; &#x27;servant&#x27; ? &#x27;cardcontainer spell-card tooltipcontainer&#x27; : &#x27;cardcontainer tooltipcontainer&#x27;&quot;
+          (mouseenter)&#x3D;&quot;cardInHandOnMouseEnterEffect(card)&quot; (mouseleave)&#x3D;&quot;cardInHandOnMouseLeaveEffect(card)&quot;&gt;
+          &lt;div&gt;&lt;i (mouseenter)&#x3D;&quot;playCardInfo(card)&quot; class&#x3D;&quot;card-speaker fa fa-volume-up&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;img class&#x3D;&quot;cardimg&quot; src&#x3D;&quot;../assets/cards/{{card.name}}.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+          &lt;div class&#x3D;&quot;cardinfo&quot;&gt;
+            &lt;p class&#x3D;&quot;cardtitle&quot;&gt;{{card.name}}&lt;/p&gt;
+            &lt;p class&#x3D;&quot;cardspecs&quot;&gt;
+              {{card.manacost}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/mana.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+              {{card.damage}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/damage.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+              {{card.lifepoints}}&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/lifepoint.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;&lt;/p&gt;
+            &lt;p class&#x3D;&quot;carddescription&quot;&gt;{{card.description}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--&lt;div class&#x3D;&quot;tooltiptext tooltip-arrow-down&quot;&gt;{{card.description}}&lt;/div&gt;--&gt;
+        &lt;/div&gt;
+
+        &lt;!--
+        &lt;div class&#x3D;&quot;cardcontainer tooltipcontainer&quot; (click)&#x3D;&quot;selectCardInHand(card)&quot;&gt;
+          &lt;div&gt;&lt;i class&#x3D;&quot;card-speaker fa fa-volume-up&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;img class&#x3D;&quot;cardimg&quot; src&#x3D;&quot;../assets/cards/{{card.name}}.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+          &lt;div class&#x3D;&quot;&quot;&gt;
+            &lt;p class&#x3D;&quot;cardtitle&quot;&gt;Title&lt;/p&gt;
+            &lt;p class&#x3D;&quot;cardspecs&quot;&gt;
+              0&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/mana.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;/
+              0&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/damage.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;/
+              0&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/lifepoint.svg&quot; alt&#x3D;&quot;Card image&quot;&gt;
+            &lt;/p&gt;
+            &lt;p class&#x3D;&quot;carddescription&quot;&gt;Provocation&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;tooltiptext tooltip-arrow-down&quot;&gt;{{card.description}}&lt;/div&gt;
+        &lt;/div&gt;
+        --&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;button style&#x3D;&quot;position:absolute; right: 0%; border-radius: 0;&quot; class&#x3D;&quot;btn btn-info&quot; id&#x3D;&quot;helpBtn&quot;
+      (click)&#x3D;&quot;showHelp()&quot;&gt;&lt;i class&#x3D;&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button style&#x3D;&quot;position:absolute; border-radius: 0;&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;showChatModal()&quot;&gt;&lt;i
+        class&#x3D;&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;i id&#x3D;&quot;unreadMessages&quot; style&#x3D;&quot;color:red; display:none;&quot;
+        class&#x3D;&quot;fa fa-exclamation&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- The Modal --&gt;
+&lt;div id&#x3D;&quot;gameboardMessagesModal&quot; class&#x3D;&quot;modal&quot;&gt;
+
+  &lt;!-- Modal content --&gt;
+  &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+      &lt;h2&gt;Notification&lt;/h2&gt;
+      &lt;span (click)&#x3D;&quot;hideGameboardMessagesModal()&quot; class&#x3D;&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div id&#x3D;&quot;serverMessageGameBoard&quot; class&#x3D;&quot;modal-body&quot;&gt;
+      &lt;!-- Server message --&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+      &lt;button id&#x3D;&quot;gameboardOkBtn&quot; (click)&#x3D;&quot;hideGameboardMessagesModal()&quot;&gt;Ok&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- The help modal --&gt;
+&lt;div id&#x3D;&quot;helpModal&quot; class&#x3D;&quot;help-modal&quot;&gt;
+
+  &lt;!-- Modal content --&gt;
+  &lt;div class&#x3D;&quot;help-modal-content&quot;&gt;
+    &lt;div class&#x3D;&quot;help-modal-header&quot;&gt;
+      &lt;span class&#x3D;&quot;help-close&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;h2&gt;How to play MiniHeathstone?&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;help-modal-body&quot;&gt;
+      &lt;h3&gt;Icon dictionary&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/mana.svg&quot; alt&#x3D;&quot;mana-icon&quot;&gt; : Mana cost of the card&lt;/li&gt;
+        &lt;li&gt;&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/damage.svg&quot; alt&#x3D;&quot;damage-icon&quot;&gt; : Damage dealt by the card&lt;/li&gt;
+        &lt;li&gt;&lt;img class&#x3D;&quot;specs-icon&quot; src&#x3D;&quot;../assets/cards/lifepoint.svg&quot; alt&#x3D;&quot;lifepoint-icon&quot;&gt; : Servant lifepoints&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h3&gt;Types of cards&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Servant : &lt;/b&gt;(Yellow border) Once clicked, the servant will be added to the ground and will have to wait
+          till the next
+          round
+          before being able to attack (unless it have &quot;Charge&quot; effect - see effects section below)&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Spell : &lt;/b&gt;(Purple border) If the description indicates that it is not a targeted spell, once clicked,
+          the card will be used and its effects applied.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Targeted spell : &lt;/b&gt; (purple border) if the description indicates that it is a targeted spell, click on
+          it, then click on the target ennemy servant.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h3&gt;Card effects&lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Provocation : &lt;/b&gt;No other opposing servant or hero can be attacked while this servant is still alive
+        &lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Charge : &lt;/b&gt;the servant doesn&#x27;t have to wait for the next round to be able to attack&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Lifesteal : &lt;/b&gt;Receives as much health as the damage dealt&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;help-modal-footer&quot;&gt;
+      &lt;h3&gt;&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./gameboard.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.gbwrapper {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.playerzone {
+    /*background-color: gray;*/
+    background-image: url(&#x27;/assets/textures/playerzone.png&#x27;);
+    background-repeat: repeat;
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#countdown {
+   /* font-family: countdown;   */
+   text-align: center;
+   color: red;
+   padding: 0.5em;
+   font-size: 30px;
+}
+
+#opponentzone {
+    height:20%;
+}
+
+#myzone {
+    height:40%;
+}
+
+.playerzonetop {
+    display: flex;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.fightzone {
+    /*background-color: #F4A460;*/
+    background-image: url(&#x27;/assets/textures/fightzone.png&#x27;);
+    background-repeat: repeat;
+    border-top:1px solid #F3CD2C;
+    border-bottom:1px solid #F3CD2C;
+    width:100%;
+    height:40%;
+    display:flex;
+    padding-bottom: 0.7em;
+}
+
+.fightzoneground {
+    width:100%;
+}
+
+.division {
+    height: 50%;
+    /*border:1px solid black;*/
+}
+
+.fightzoneside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+	align-items: stretch;
+}
+
+.fightzoneside button {
+    margin-right: 0.4em;
+}
+
+
+.heropreview {
+    position: relative;
+    width:5em;
+    margin-left: auto;
+    margin-right:auto;
+    /*border: 1px solid;*/
+}
+
+#heroOpponent:hover {
+    cursor:hover;
+}
+
+.herospecial {
+    border: 1px solid;
+    border-radius: 5em;    
+    height: 3em;
+    width:3em;
+    margin: 0.5em;
+}
+
+.herospecial img {
+    border-radius: 5em;
+}
+
+.lifepoints {
+    border-top: 1px solid;
+    text-align: center;
+    font-size: 10px;
+    min-width: max-content;
+}
+
+.playercards {
+    margin-top: 0.5em;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.cardcontainer {
+    flex-grow:1;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:0.5em;
+    max-width: 5em;
+    /*background-color: darkslategrey;*/
+    border: 1px solid #F3CD2C;
+    color: black;
+    background-color: grey;
+    position: relative;
+    min-width: 5em;
+}
+
+.cardinfo {
+    width: 100%;
+}
+
+.active-card {
+    box-shadow: 0 4px 8px 0, 0 6px 20px 0 #F3CD2C;
+}
+
+.active-skill {
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 #F3CD2C;
+}
+
+.spell-card {
+    border: 1px solid #9500FF !important;
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 #9500FF !important;
+}
+
+.targeted-card {
+    border: 1px solid red !important;
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 red !important;
+}
+
+.selected-card-in-hand {
+    box-shadow: 0px 0px 3px 4px, 1px 6px 10px 0 #F3CD2C !important;
+}
+
+.cardcontainer:hover {
+    cursor:pointer;
+}
+
+.cardimg {
+    width: 50%;
+    margin: 0.2em;
+}
+
+.cardtitle, .cardspecs, .carddescription {
+    font-size: 11px;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+.cardswrapper {
+   display:flex;
+   width: min-content;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.specs-icon {
+    height: 1em;
+    width:1em;
+}
+
+.playername {
+    text-align: center;
+}
+
+#myspecial:hover {
+    cursor:pointer;
+}
+
+.tooltipcontainer {
+    cursor: pointer;
+}
+
+.tooltipcontainer:hover .tooltiptext {
+    visibility:visible;
+}
+
+.tooltiptext {
+    visibility:hidden;
+    width: 120px;
+    background-color: deepskyblue;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+    position: relative;
+    opacity: 0.7;
+  }
+
+  .tooltip-arrow-down {
+    bottom: 400%;
+  }
+
+  .tooltip-arrow-up {
+    top: 20%;
+  }
+
+  .tooltip-arrow-down::after {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: deepskyblue transparent transparent transparent;
+  }
+
+  .tooltip-arrow-up::after {
+    content: &quot;&quot;;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent deepskyblue transparent;
+  }
+
+  /* Help modal*/
+
+
+  /* The Modal (background) */
+.help-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .help-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    color:black !important;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    height: 90%;
+    overflow-y: scroll;
+  }
+
+  .sword-clash, .wound {
+      position: absolute;
+  }
+
+  .card-sword-clash, .card-wound {
+    right: 2%;
+    top: 10%;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .help-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .help-close:hover,
+  .help-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .help-modal-header {
+    padding: 2px 16px;
+    background-color: lightseagreen;
+    color: white;
+  }
+  
+  .help-modal-body {padding: 2px 16px;}
+  
+  .help-modal-footer {
+    padding: 2px 16px;
+    background-color: lightseagreen;
+    color: white;
+  }
+
+  .card-speaker {
+    position: absolute;
+    right: 0;
+    margin-top: 0.1em;
+    margin-right: 0.1em;
+    font-size: 13px;
+  }
+
+  .card-speaker:hover {
+    color:#ffc107;
+    cursor: pointer;
+  }
+
+  
+
+  @media screen and (max-width: 500px) {
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .playername {
+        font-size:14px;
+    }
+    .herospecial {
+        width: 2em;
+        height: 2em;
+    }
+
+    .heropreview {
+        width: 4em;
+        position: relative;
+    }
+
+    .btn {
+        font-size: 0.6em;
+        padding: 0.3em;
+    }
+
+    #countdown {
+        font-size: 16px;
+    }
+
+    .cardcontainer {
+        font-size: 8px;
+        min-width: 7.5em;
+        max-width: fit-content;
+    }
+
+    #opponentzone {
+        height: 15%;
+    }
+
+    .division .cardswrapper {
+        height: 95%;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+
+    #opponentzone {
+        height: fit-content;
+    }
+
+    .playerzonetop {
+        height: fit-content;
+    }
+
+    .playername {
+        font-size:14px;
+    }
+
+      .heropreview {
+        width: 3em;
+      }
+
+      .herospecial {
+        height: 1.7em;
+        width: 1.7em;
+      }
+
+      .btn {
+        font-size: 0.6em;
+        padding: 0.3em;
+        }
+        #countdown {
+            font-size: 16px;
+        }
+
+        .cardcontainer {
+            min-width: 4em;
+        }
+
+        .cardimg {
+            width: 30%;
+        }
+  }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="gbwrapper">  <div id="opponentzone" class="playerzone">    <button class="btn btn-danger" (click)="logout()" style="float: right;    position: absolute;    right: 0%;    border-radius: 0;">Logout</button>    <div class="playerzonetop">      <div id="heroOpponent" style="cursor: pointer;" class="heropreview" (click)="selectTargetHero(opponentHero)"        (mouseenter)="showHeroSwordClash()" (mouseleave)="hideHeroSwordClash()">        <div class="playername">{{opponent.name}}</div>        <img id="hero_swordClash" class="sword-clash" style="display: none;" src="../assets/effects/sword-clash.svg"          alt="sword clash">        <img id="hero_wound_{{removeSpacings(opponentHero.uniqueId)}}" class="wound" style="display: none;"          src="../assets/effects/wound.svg" alt="wound">        <img src="../assets/heroes/{{opponentHero.type}}_preview.svg" alt="opponent hero preview">      </div>      <div class="herospecs">        <div class="herospecial tooltipcontainer">          <img src="../assets/herospecial/fire-spell-cast.svg" alt="hero special attack">          <div class="tooltiptext tooltip-arrow-up">{{opponentHero.description}}</div>        </div>        <div class="lifepoints">          Life : {{opponentHero.lifepoints}}/30<br>          Def : {{opponentHero.defense}}        </div>      </div>      <div class="manapoints">        {{opponent.mana}}/{{opponent.stored_mana}}      </div>    </div>  </div>  <div class="fightzone">    <div class="fightzoneground">      <div id="ennemyground" class="division">        <div class="cardswrapper">          <div *ngFor="let card of opponentCardsOnGround" id="enemy_{{removeSpacings(card.uniqueId)}}"            (mouseenter)="targetedCardOnMouseEnterEffect(card)" (mouseleave)="targetedCardOnMouseLeaveEffect(card)"            class="cardcontainer" (click)="selectTargetServant(card)">            <img id="servant_swordClash_{{removeSpacings(card.uniqueId)}}" class="sword-clash card-sword-clash"              style="display: none;" src="../assets/effects/sword-clash.svg" alt="sword clash">            <img id="servant_wound_{{removeSpacings(card.uniqueId)}}" class="wound card-wound" style="display: none;"              src="../assets/effects/wound.svg" alt="sword clash">            <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">            <div class="cardinfo">              <p class="cardtitle">{{card.name}}</p>              <p class="cardspecs">                {{card.manacost}}<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">                {{card.damage}}<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">                {{card.lifepoints}}<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image"></p>              <p class="carddescription">{{card.description}}</p>            </div>          </div>        </div>      </div>      <div id="myground" class="division">        <div class="cardswrapper">          <div *ngFor="let card of cardsOnGround" class="cardcontainer"            [className]="card.canAttack === true ? \'cardcontainer active-card\' : \'cardcontainer\'"            (click)="selectServant(card)">            <img id="servant_wound_{{removeSpacings(card.uniqueId)}}" class="wound card-wound" style="display: none;"              src="../assets/effects/wound.svg" alt="sword clash">            <div><i (mouseenter)="playServantCardInfo()" class="card-speaker fa fa-volume-up"></i></div>            <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">            <div class="cardinfo">              <p class="cardtitle">{{card.name}}</p>              <p class="cardspecs">                {{card.manacost}}<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">                {{card.damage}}<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">                {{card.lifepoints}}<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image"></p>              <p class="carddescription">{{card.description}}</p>            </div>          </div>        </div>      </div>    </div>    <div class="fightzoneside">      <button class="btn btn-success" style="margin-top: 1em;" [disabled]=!myturn id="enemyTurnBtn"        (click)="endMyTurn()">End my turn</button>      <!--button class="btn btn-info" id="helpBtn" (click)="showHelp()">How to play?</button><br>-->      <div id="countdown">{{timer}}</div>      <!--<button class="btn btn-danger" (click)="logout()">Logout</button><br>-->      <button class="btn btn-outline-danger" (click)="quitGame()">Quit game</button>    </div>  </div>  <div id="myzone" class="playerzone">    <div class="playerzonetop">      <div class="heropreview">        <div class="playername">{{player.name}}</div>        <img id="hero_wound_{{removeSpacings(hero.uniqueId)}}" class="wound" style="display: none;"          src="../assets/effects/wound.svg" alt="wound">        <img src="../assets/heroes/{{hero.type}}_preview.svg" alt="my hero preview">        <!--<div class="lifepoints">          Life: {{hero.lifepoints}}/30<br>          Def: {{hero.defense}}        </div>-->      </div>      <div class="herospecs">        <div id="myspecial" class="herospecial tooltipcontainer" (click)="selectHerospecial()"          [className]="hero.canUseSpecialSkill === true ? \'herospecial active-skill tooltipcontainer\' : \'herospecial tooltipcontainer\'">          <img src="../assets/herospecial/fire-spell-cast.svg" alt="hero special attack">          <div class="tooltiptext tooltip-arrow-down">{{hero.description}}</div>        </div>        <div class="lifepoints">          Life: {{hero.lifepoints}}/30<br>          Def: {{hero.defense}}        </div>      </div>      <div class="manapoints">        {{player.mana}}/{{player.stored_mana}}      </div>    </div>    <div class="playercards">      <div class="cardswrapper">        <div *ngFor="let card of handOfCards" id="card_in_hand_{{removeSpacings(card.uniqueId)}}"          class="cardcontainer tooltipcontainer" (click)="selectCardInHand(card)"          [className]="card.nature !== \'servant\' ? \'cardcontainer spell-card tooltipcontainer\' : \'cardcontainer tooltipcontainer\'"          (mouseenter)="cardInHandOnMouseEnterEffect(card)" (mouseleave)="cardInHandOnMouseLeaveEffect(card)">          <div><i (mouseenter)="playCardInfo(card)" class="card-speaker fa fa-volume-up"></i></div>          <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">          <div class="cardinfo">            <p class="cardtitle">{{card.name}}</p>            <p class="cardspecs">              {{card.manacost}}<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">              {{card.damage}}<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">              {{card.lifepoints}}<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image"></p>            <p class="carddescription">{{card.description}}</p>          </div>          <!--<div class="tooltiptext tooltip-arrow-down">{{card.description}}</div>-->        </div>        <!--        <div class="cardcontainer tooltipcontainer" (click)="selectCardInHand(card)">          <div><i class="card-speaker fa fa-volume-up"></i></div>          <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">          <div class="">            <p class="cardtitle">Title</p>            <p class="cardspecs">              0<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">/              0<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">/              0<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image">            </p>            <p class="carddescription">Provocation</p>          </div>          <div class="tooltiptext tooltip-arrow-down">{{card.description}}</div>        </div>        -->      </div>    </div>    <button style="position:absolute; right: 0%; border-radius: 0;" class="btn btn-info" id="helpBtn"      (click)="showHelp()"><i class="fa fa-question"></i></button>    <button style="position:absolute; border-radius: 0;" class="btn btn-success" (click)="showChatModal()"><i        class="fa fa-comments"></i><i id="unreadMessages" style="color:red; display:none;"        class="fa fa-exclamation"></i></button>  </div></div><!-- The Modal --><div id="gameboardMessagesModal" class="modal">  <!-- Modal content -->  <div class="modal-content">    <div class="modal-header">      <h2>Notification</h2>      <span (click)="hideGameboardMessagesModal()" class="close">&times;</span>    </div>    <div id="serverMessageGameBoard" class="modal-body">      <!-- Server message -->    </div>    <div class="modal-footer">      <button id="gameboardOkBtn" (click)="hideGameboardMessagesModal()">Ok</button>    </div>  </div></div><!-- The help modal --><div id="helpModal" class="help-modal">  <!-- Modal content -->  <div class="help-modal-content">    <div class="help-modal-header">      <span class="help-close">&times;</span>      <h2>How to play MiniHeathstone?</h2>    </div>    <div class="help-modal-body">      <h3>Icon dictionary</h3>      <ul>        <li><img class="specs-icon" src="../assets/cards/mana.svg" alt="mana-icon"> : Mana cost of the card</li>        <li><img class="specs-icon" src="../assets/cards/damage.svg" alt="damage-icon"> : Damage dealt by the card</li>        <li><img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="lifepoint-icon"> : Servant lifepoints</li>      </ul>      <h3>Types of cards</h3>      <ul>        <li><b>Servant : </b>(Yellow border) Once clicked, the servant will be added to the ground and will have to wait          till the next          round          before being able to attack (unless it have "Charge" effect - see effects section below)</li>        <li><b>Spell : </b>(Purple border) If the description indicates that it is not a targeted spell, once clicked,          the card will be used and its effects applied.</li>        <li><b>Targeted spell : </b> (purple border) if the description indicates that it is a targeted spell, click on          it, then click on the target ennemy servant.</li>      </ul>      <h3>Card effects</h3>      <ul>        <li><b>Provocation : </b>No other opposing servant or hero can be attacked while this servant is still alive        </li>        <li><b>Charge : </b>the servant doesn\'t have to wait for the next round to be able to attack</li>        <li><b>Lifesteal : </b>Receives as much health as the damage dealt</li>      </ul>    </div>    <div class="help-modal-footer">      <h3></h3>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'GameboardComponent', 'selector': 'app-gameboard'},{'name': 'LobbyComponent', 'selector': 'app-lobby'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'ServerProxyComponent', 'selector': 'app-path-location'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'GameboardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GameboardComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

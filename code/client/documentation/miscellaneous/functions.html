@@ -1,0 +1,2064 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>minihearthstone documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">minihearthstone documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-functions">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Functions</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#getAttackedServants" title="src/app/webclientfacade/facade-properties.ts"><b>getAttackedServants</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getCardsOnGround" title="src/app/webclientfacade/facade-properties.ts"><b>getCardsOnGround</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getGameBoard" title="src/app/webclientfacade/facade-properties.ts"><b>getGameBoard</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getHandOfCards" title="src/app/webclientfacade/facade-properties.ts"><b>getHandOfCards</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getHero" title="src/app/webclientfacade/facade-properties.ts"><b>getHero</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getHeroAttacked" title="src/app/webclientfacade/facade-properties.ts"><b>getHeroAttacked</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getHeroes" title="src/app/webclientfacade/facade-properties.ts"><b>getHeroes</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getMsgReception" title="src/app/webclientfacade/facade-properties.ts"><b>getMsgReception</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getOpponentCardsOnGround" title="src/app/webclientfacade/facade-properties.ts"><b>getOpponentCardsOnGround</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getOpponentHero" title="src/app/webclientfacade/facade-properties.ts"><b>getOpponentHero</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getPlayer" title="src/app/webclientfacade/facade-properties.ts"><b>getPlayer</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getPlayerOpponent" title="src/app/webclientfacade/facade-properties.ts"><b>getPlayerOpponent</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getReceivedMessage" title="src/app/webclientfacade/facade-properties.ts"><b>getReceivedMessage</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getReception" title="src/app/webclientfacade/facade-properties.ts"><b>getReception</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getState" title="src/app/webclientfacade/facade-properties.ts"><b>getState</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getTurn" title="src/app/webclientfacade/facade-properties.ts"><b>getTurn</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getWinner" title="src/app/webclientfacade/facade-properties.ts"><b>getWinner</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#performPreActionPlayerCardEffects" title="src/app/webclientfacade/facade-properties.ts"><b>performPreActionPlayerCardEffects</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playCardInfo" title="src/app/webclientfacade/facade-properties.ts"><b>playCardInfo</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playChooseServantCardSound" title="src/app/webclientfacade/facade-properties.ts"><b>playChooseServantCardSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playChooseSpellCardSound" title="src/app/webclientfacade/facade-properties.ts"><b>playChooseSpellCardSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playDamageSound" title="src/app/webclientfacade/facade-properties.ts"><b>playDamageSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playDefeatSound" title="src/app/webclientfacade/facade-properties.ts"><b>playDefeatSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playGameBoardBackgroundMusic" title="src/app/webclientfacade/facade-properties.ts"><b>playGameBoardBackgroundMusic</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playHoverOrSelectSound" title="src/app/webclientfacade/facade-properties.ts"><b>playHoverOrSelectSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playModalAppearSound" title="src/app/webclientfacade/facade-properties.ts"><b>playModalAppearSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playNewMessageSound" title="src/app/webclientfacade/facade-properties.ts"><b>playNewMessageSound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playServantCardInfo" title="src/app/webclientfacade/facade-properties.ts"><b>playServantCardInfo</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#playVictorySound" title="src/app/webclientfacade/facade-properties.ts"><b>playVictorySound</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#resetAllProperties" title="src/app/webclientfacade/facade-properties.ts"><b>resetAllProperties</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setGameBoard" title="src/app/webclientfacade/facade-properties.ts"><b>setGameBoard</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setGameId" title="src/app/webclientfacade/facade-properties.ts"><b>setGameId</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setHandOfCards" title="src/app/webclientfacade/facade-properties.ts"><b>setHandOfCards</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setHero" title="src/app/webclientfacade/facade-properties.ts"><b>setHero</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setHeroes" title="src/app/webclientfacade/facade-properties.ts"><b>setHeroes</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setMsgReception" title="src/app/webclientfacade/facade-properties.ts"><b>setMsgReception</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setOpponentHero" title="src/app/webclientfacade/facade-properties.ts"><b>setOpponentHero</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setPlayer" title="src/app/webclientfacade/facade-properties.ts"><b>setPlayer</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setPlayerOpponent" title="src/app/webclientfacade/facade-properties.ts"><b>setPlayerOpponent</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setReceivedMessage" title="src/app/webclientfacade/facade-properties.ts"><b>setReceivedMessage</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setReception" title="src/app/webclientfacade/facade-properties.ts"><b>setReception</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#setState" title="src/app/webclientfacade/facade-properties.ts"><b>setState</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#stopGameBoardBackgroundMusic" title="src/app/webclientfacade/facade-properties.ts"><b>stopGameBoardBackgroundMusic</b>&nbsp;&nbsp;&nbsp;(src/.../facade-properties.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/app/webclientfacade/facade-properties.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAttackedServants"></a>
+                    <span class="name">
+                        <b>
+                            getAttackedServants
+                        </b>
+                        <a href="#getAttackedServants"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAttackedServants()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCardsOnGround"></a>
+                    <span class="name">
+                        <b>
+                            getCardsOnGround
+                        </b>
+                        <a href="#getCardsOnGround"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCardsOnGround(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGameBoard"></a>
+                    <span class="name">
+                        <b>
+                            getGameBoard
+                        </b>
+                        <a href="#getGameBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGameBoard()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/GameBoard.html" target="_self" >GameBoard</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHandOfCards"></a>
+                    <span class="name">
+                        <b>
+                            getHandOfCards
+                        </b>
+                        <a href="#getHandOfCards"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHandOfCards(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Card.html" target="_self" >Card[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHero"></a>
+                    <span class="name">
+                        <b>
+                            getHero
+                        </b>
+                        <a href="#getHero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHero(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Hero.html" target="_self" >Hero</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHeroAttacked"></a>
+                    <span class="name">
+                        <b>
+                            getHeroAttacked
+                        </b>
+                        <a href="#getHeroAttacked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHeroAttacked()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHeroes"></a>
+                    <span class="name">
+                        <b>
+                            getHeroes
+                        </b>
+                        <a href="#getHeroes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHeroes()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Hero.html" target="_self" >Hero[]</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMsgReception"></a>
+                    <span class="name">
+                        <b>
+                            getMsgReception
+                        </b>
+                        <a href="#getMsgReception"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMsgReception()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOpponentCardsOnGround"></a>
+                    <span class="name">
+                        <b>
+                            getOpponentCardsOnGround
+                        </b>
+                        <a href="#getOpponentCardsOnGround"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOpponentCardsOnGround(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOpponentHero"></a>
+                    <span class="name">
+                        <b>
+                            getOpponentHero
+                        </b>
+                        <a href="#getOpponentHero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOpponentHero(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Hero.html" target="_self" >Hero</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPlayer"></a>
+                    <span class="name">
+                        <b>
+                            getPlayer
+                        </b>
+                        <a href="#getPlayer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPlayer(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Player.html" target="_self" >Player</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPlayerOpponent"></a>
+                    <span class="name">
+                        <b>
+                            getPlayerOpponent
+                        </b>
+                        <a href="#getPlayerOpponent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPlayerOpponent(playerId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Player.html" target="_self" >Player</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getReceivedMessage"></a>
+                    <span class="name">
+                        <b>
+                            getReceivedMessage
+                        </b>
+                        <a href="#getReceivedMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getReceivedMessage()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Message.html" target="_self" >Message</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getReception"></a>
+                    <span class="name">
+                        <b>
+                            getReception
+                        </b>
+                        <a href="#getReception"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getReception()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getState"></a>
+                    <span class="name">
+                        <b>
+                            getState
+                        </b>
+                        <a href="#getState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getState()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTurn"></a>
+                    <span class="name">
+                        <b>
+                            getTurn
+                        </b>
+                        <a href="#getTurn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTurn()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getWinner"></a>
+                    <span class="name">
+                        <b>
+                            getWinner
+                        </b>
+                        <a href="#getWinner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getWinner()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="performPreActionPlayerCardEffects"></a>
+                    <span class="name">
+                        <b>
+                            performPreActionPlayerCardEffects
+                        </b>
+                        <a href="#performPreActionPlayerCardEffects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>performPreActionPlayerCardEffects(playerId, targetCard, targetCardEffectName)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>targetCard</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>targetCardEffectName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playCardInfo"></a>
+                    <span class="name">
+                        <b>
+                            playCardInfo
+                        </b>
+                        <a href="#playCardInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playCardInfo(cardName)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cardName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playChooseServantCardSound"></a>
+                    <span class="name">
+                        <b>
+                            playChooseServantCardSound
+                        </b>
+                        <a href="#playChooseServantCardSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playChooseServantCardSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playChooseSpellCardSound"></a>
+                    <span class="name">
+                        <b>
+                            playChooseSpellCardSound
+                        </b>
+                        <a href="#playChooseSpellCardSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playChooseSpellCardSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playDamageSound"></a>
+                    <span class="name">
+                        <b>
+                            playDamageSound
+                        </b>
+                        <a href="#playDamageSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playDamageSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playDefeatSound"></a>
+                    <span class="name">
+                        <b>
+                            playDefeatSound
+                        </b>
+                        <a href="#playDefeatSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playDefeatSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playGameBoardBackgroundMusic"></a>
+                    <span class="name">
+                        <b>
+                            playGameBoardBackgroundMusic
+                        </b>
+                        <a href="#playGameBoardBackgroundMusic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playGameBoardBackgroundMusic()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playHoverOrSelectSound"></a>
+                    <span class="name">
+                        <b>
+                            playHoverOrSelectSound
+                        </b>
+                        <a href="#playHoverOrSelectSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playHoverOrSelectSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playModalAppearSound"></a>
+                    <span class="name">
+                        <b>
+                            playModalAppearSound
+                        </b>
+                        <a href="#playModalAppearSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playModalAppearSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playNewMessageSound"></a>
+                    <span class="name">
+                        <b>
+                            playNewMessageSound
+                        </b>
+                        <a href="#playNewMessageSound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playNewMessageSound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playServantCardInfo"></a>
+                    <span class="name">
+                        <b>
+                            playServantCardInfo
+                        </b>
+                        <a href="#playServantCardInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playServantCardInfo()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playVictorySound"></a>
+                    <span class="name">
+                        <b>
+                            playVictorySound
+                        </b>
+                        <a href="#playVictorySound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playVictorySound()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetAllProperties"></a>
+                    <span class="name">
+                        <b>
+                            resetAllProperties
+                        </b>
+                        <a href="#resetAllProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetAllProperties()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setGameBoard"></a>
+                    <span class="name">
+                        <b>
+                            setGameBoard
+                        </b>
+                        <a href="#setGameBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setGameBoard(newGameBoard)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newGameBoard</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setGameId"></a>
+                    <span class="name">
+                        <b>
+                            setGameId
+                        </b>
+                        <a href="#setGameId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setGameId(newGameId)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newGameId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setHandOfCards"></a>
+                    <span class="name">
+                        <b>
+                            setHandOfCards
+                        </b>
+                        <a href="#setHandOfCards"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setHandOfCards(playerId, handOfCards)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>playerId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>handOfCards</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setHero"></a>
+                    <span class="name">
+                        <b>
+                            setHero
+                        </b>
+                        <a href="#setHero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setHero(newHero)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newHero</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setHeroes"></a>
+                    <span class="name">
+                        <b>
+                            setHeroes
+                        </b>
+                        <a href="#setHeroes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setHeroes(newHeroes)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newHeroes</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMsgReception"></a>
+                    <span class="name">
+                        <b>
+                            setMsgReception
+                        </b>
+                        <a href="#setMsgReception"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setMsgReception(bool: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bool</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setOpponentHero"></a>
+                    <span class="name">
+                        <b>
+                            setOpponentHero
+                        </b>
+                        <a href="#setOpponentHero"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setOpponentHero(newHero)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newHero</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setPlayer"></a>
+                    <span class="name">
+                        <b>
+                            setPlayer
+                        </b>
+                        <a href="#setPlayer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setPlayer(newPlayer)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newPlayer</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setPlayerOpponent"></a>
+                    <span class="name">
+                        <b>
+                            setPlayerOpponent
+                        </b>
+                        <a href="#setPlayerOpponent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setPlayerOpponent(newPlayerOpponent)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newPlayerOpponent</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setReceivedMessage"></a>
+                    <span class="name">
+                        <b>
+                            setReceivedMessage
+                        </b>
+                        <a href="#setReceivedMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setReceivedMessage(newMessage)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newMessage</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setReception"></a>
+                    <span class="name">
+                        <b>
+                            setReception
+                        </b>
+                        <a href="#setReception"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setReception(newReception: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newReception</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setState"></a>
+                    <span class="name">
+                        <b>
+                            setState
+                        </b>
+                        <a href="#setState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setState(newState)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newState</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopGameBoardBackgroundMusic"></a>
+                    <span class="name">
+                        <b>
+                            stopGameBoardBackgroundMusic
+                        </b>
+                        <a href="#stopGameBoardBackgroundMusic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stopGameBoardBackgroundMusic()</code>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-functions';
+            var COMPODOC_CURRENT_PAGE_URL = 'functions.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

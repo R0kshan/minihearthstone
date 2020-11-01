@@ -1,0 +1,253 @@
+<div class="gbwrapper">
+
+  <div id="opponentzone" class="playerzone">
+    <button class="btn btn-danger" (click)="logout()" style="float: right;
+    position: absolute;
+    right: 0%;
+    border-radius: 0;">Logout</button>
+    <div class="playerzonetop">
+
+      <div id="heroOpponent" style="cursor: pointer;" class="heropreview" (click)="selectTargetHero(opponentHero)"
+        (mouseenter)="showHeroSwordClash()" (mouseleave)="hideHeroSwordClash()">
+        <div class="playername">{{opponent.name}}</div>
+        <img id="hero_swordClash" class="sword-clash" style="display: none;" src="../assets/effects/sword-clash.svg"
+          alt="sword clash">
+        <img id="hero_wound_{{removeSpacings(opponentHero.uniqueId)}}" class="wound" style="display: none;"
+          src="../assets/effects/wound.svg" alt="wound">
+        <img src="../assets/heroes/{{opponentHero.type}}_preview.svg" alt="opponent hero preview">
+      </div>
+      <div class="herospecs">
+        <div class="herospecial tooltipcontainer">
+          <img src="../assets/herospecial/fire-spell-cast.svg" alt="hero special attack">
+          <div class="tooltiptext tooltip-arrow-up">{{opponentHero.description}}</div>
+        </div>
+        <div class="lifepoints">
+          Life : {{opponentHero.lifepoints}}/30<br>
+          Def : {{opponentHero.defense}}
+        </div>
+      </div>
+
+      <div class="manapoints">
+        {{opponent.mana}}/{{opponent.stored_mana}}
+      </div>
+    </div>
+  </div>
+
+  <div class="fightzone">
+    <div class="fightzoneground">
+      <div id="ennemyground" class="division">
+        <div class="cardswrapper">
+          <div *ngFor="let card of opponentCardsOnGround" id="enemy_{{removeSpacings(card.uniqueId)}}"
+            (mouseenter)="targetedCardOnMouseEnterEffect(card)" (mouseleave)="targetedCardOnMouseLeaveEffect(card)"
+            class="cardcontainer" (click)="selectTargetServant(card)">
+
+            <img id="servant_swordClash_{{removeSpacings(card.uniqueId)}}" class="sword-clash card-sword-clash"
+              style="display: none;" src="../assets/effects/sword-clash.svg" alt="sword clash">
+            <img id="servant_wound_{{removeSpacings(card.uniqueId)}}" class="wound card-wound" style="display: none;"
+              src="../assets/effects/wound.svg" alt="sword clash">
+
+            <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">
+            <div class="cardinfo">
+              <p class="cardtitle">{{card.name}}</p>
+              <p class="cardspecs">
+                {{card.manacost}}<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">
+                {{card.damage}}<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">
+                {{card.lifepoints}}<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image"></p>
+              <p class="carddescription">{{card.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myground" class="division">
+        <div class="cardswrapper">
+          <div *ngFor="let card of cardsOnGround" class="cardcontainer"
+            [className]="card.canAttack === true ? 'cardcontainer active-card' : 'cardcontainer'">
+            <img id="servant_wound_{{removeSpacings(card.uniqueId)}}" class="wound card-wound" style="display: none;"
+              src="../assets/effects/wound.svg" alt="sword clash">
+            <div><i (click)="playServantCardInfo()" class="card-speaker fa fa-volume-up"></i></div>
+            <div><i (click)="showCardTooltip(card)" class="card-tooltip fa fa-info-circle"></i></div>
+            <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">
+            <div (click)="selectServant(card)">
+              <div class="cardinfo">
+                <p class="cardtitle">{{card.name}}</p>
+                <p class="cardspecs">
+                  {{card.manacost}}<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">
+                  {{card.damage}}<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">
+                  {{card.lifepoints}}<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image"></p>
+                <p class="carddescription">{{card.description}}</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fightzoneside">
+      <button class="btn btn-success" style="margin-top: 1em;" [disabled]=!myturn id="enemyTurnBtn"
+        (click)="endMyTurn()">End my turn</button>
+      <!--button class="btn btn-info" id="helpBtn" (click)="showHelp()">How to play?</button><br>-->
+      <div id="countdown">{{timer}}</div>
+      <!--<button class="btn btn-danger" (click)="logout()">Logout</button><br>-->
+      <button class="btn btn-outline-danger" (click)="quitGame()">Quit game</button>
+    </div>
+  </div>
+
+  <div id="myzone" class="playerzone">
+    <div class="playerzonetop">
+      <div class="heropreview">
+        <div class="playername">{{player.name}}</div>
+        <img id="hero_wound_{{removeSpacings(hero.uniqueId)}}" class="wound" style="display: none;"
+          src="../assets/effects/wound.svg" alt="wound">
+        <img src="../assets/heroes/{{hero.type}}_preview.svg" alt="my hero preview">
+        <!--<div class="lifepoints">
+          Life: {{hero.lifepoints}}/30<br>
+          Def: {{hero.defense}}
+        </div>-->
+      </div>
+      <div class="herospecs">
+        <div id="myspecial" class="herospecial tooltipcontainer" (click)="selectHerospecial()"
+          [className]="hero.canUseSpecialSkill === true ? 'herospecial active-skill tooltipcontainer' : 'herospecial tooltipcontainer'">
+          <img src="../assets/herospecial/fire-spell-cast.svg" alt="hero special attack">
+          <div class="tooltiptext tooltip-arrow-down">{{hero.description}}</div>
+        </div>
+        <div class="lifepoints">
+          Life: {{hero.lifepoints}}/30<br>
+          Def: {{hero.defense}}
+        </div>
+      </div>
+
+      <div class="manapoints">
+        {{player.mana}}/{{player.stored_mana}}
+      </div>
+
+
+    </div>
+    <div class="playercards">
+      <div class="cardswrapper">
+        <div *ngFor="let card of handOfCards" id="card_in_hand_{{removeSpacings(card.uniqueId)}}"
+          class="cardcontainer tooltipcontainer" 
+          [className]="card.nature !== 'servant' ? 'cardcontainer spell-card tooltipcontainer' : 'cardcontainer tooltipcontainer'"
+          (mouseenter)="cardInHandOnMouseEnterEffect(card)" (mouseleave)="cardInHandOnMouseLeaveEffect(card)">
+          <div><i (click)="playCardInfo(card)" class="card-speaker fa fa-volume-up"></i></div>
+          <div><i (click)="showCardTooltip(card)" class="card-tooltip fa fa-info-circle"></i></div>
+          <div (click)="selectCardInHand(card)">
+            <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">
+            <div class="cardinfo">
+              <p class="cardtitle">{{card.name}}</p>
+              <p class="cardspecs">
+                {{card.manacost}}<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">
+                {{card.damage}}<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">
+                {{card.lifepoints}}<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image"></p>
+              <p class="carddescription">{{card.description}}</p>
+            </div>
+          </div>
+         <div class="tooltiptext tooltip-arrow-down">{{card.description}}</div>
+        </div>
+
+        <!--
+        <div class="cardcontainer tooltipcontainer" (click)="selectCardInHand(card)">
+         
+          <img class="cardimg" src="../assets/cards/{{card.name}}.svg" alt="Card image">
+          <div><i (click)="playCardInfo(card)" class="card-speaker fa fa-volume-up"></i></div>
+          <div><i (click)="openTooltip(card)" class="card-tooltip fa fa-info-circle"></i></div>
+          <div class="">
+            <p class="cardtitle">Title</p>
+            <p class="cardspecs">
+              0<img class="specs-icon" src="../assets/cards/mana.svg" alt="Card image">/
+              0<img class="specs-icon" src="../assets/cards/damage.svg" alt="Card image">/
+              0<img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="Card image">
+            </p>
+            <p class="carddescription">Provocation</p>
+          </div>
+          <div class="tooltiptext tooltip-arrow-down">fdff</div>
+        </div>
+       -->
+
+      </div>
+    </div>
+
+    <button style="position:absolute; right: 0%; border-radius: 0;" class="btn btn-info" id="helpBtn"
+      (click)="showHelp()"><i class="fa fa-question"></i></button>
+    <button style="position:absolute; border-radius: 0;" class="btn btn-success" (click)="showChatModal()"><i
+        class="fa fa-comments"></i><i id="unreadMessages" style="color:red; display:none;"
+        class="fa fa-exclamation"></i></button>
+  </div>
+</div>
+
+<!-- The Card information -->
+<div id="cardInformationModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="cardInformationModalTitle">Card info</h2>
+      <span (click)="hideCardInformation()" class="close">&times;</span>
+    </div>
+    <div id="cardInformationTooltip" class="modal-body">
+      <!-- Server message -->
+    </div>
+  
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="gameboardMessagesModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Notification</h2>
+      <span (click)="hideGameboardMessagesModal()" class="close">&times;</span>
+    </div>
+    <div id="serverMessageGameBoard" class="modal-body">
+      <!-- Server message -->
+    </div>
+    <div class="modal-footer">
+      <button id="gameboardOkBtn" (click)="hideGameboardMessagesModal()">Ok</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- The help modal -->
+<div id="helpModal" class="help-modal">
+
+  <!-- Modal content -->
+  <div class="help-modal-content">
+    <div class="help-modal-header">
+      <span class="help-close" (click)="hideHelp()">&times;</span>
+      <h2>How to play MiniHeathstone?</h2>
+    </div>
+    <div class="help-modal-body">
+      <h3>Icon dictionary</h3>
+      <ul>
+        <li><img class="specs-icon" src="../assets/cards/mana.svg" alt="mana-icon"> : Mana cost of the card</li>
+        <li><img class="specs-icon" src="../assets/cards/damage.svg" alt="damage-icon"> : Damage dealt by the card</li>
+        <li><img class="specs-icon" src="../assets/cards/lifepoint.svg" alt="lifepoint-icon"> : Servant lifepoints</li>
+      </ul>
+      <h3>Types of cards</h3>
+      <ul>
+        <li><b>Servant : </b>(Yellow border) Once clicked, the servant will be added to the ground and will have to wait
+          till the next
+          round
+          before being able to attack (unless it have "Charge" effect - see effects section below)</li>
+        <li><b>Spell : </b>(Purple border) If the description indicates that it is not a targeted spell, once clicked,
+          the card will be used and its effects applied.</li>
+        <li><b>Targeted spell : </b> (purple border) if the description indicates that it is a targeted spell, click on
+          it, then click on the target ennemy servant.</li>
+      </ul>
+      <h3>Card effects</h3>
+      <ul>
+        <li><b>Provocation : </b>No other opposing servant or hero can be attacked while this servant is still alive
+        </li>
+        <li><b>Charge : </b>the servant doesn't have to wait for the next round to be able to attack</li>
+        <li><b>Lifesteal : </b>Receives as much health as the damage dealt</li>
+      </ul>
+    </div>
+    <div class="help-modal-footer">
+      <h3></h3>
+    </div>
+  </div>
+
+</div>
