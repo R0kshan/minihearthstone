@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['tostring',['toString',['../classminihearthstone_1_1entities_1_1cards_1_1_card.html#a54659fff357e44c2f5efde734ca7f632',1,'minihearthstone.entities.cards.Card.toString()'],['../classminihearthstone_1_1entities_1_1deck_1_1_deck.html#ab85ee9970097035e05c528272a2edbf7',1,'minihearthstone.entities.deck.Deck.toString()'],['../classminihearthstone_1_1entities_1_1gameboard_1_1_game_board.html#a29a9542a316d97a49c4f275e67a878c4',1,'minihearthstone.entities.gameboard.GameBoard.toString()'],['../classminihearthstone_1_1entities_1_1heroes_1_1_hero.html#a9b54ab3d8c3c8e8603d5dd56fa687691',1,'minihearthstone.entities.heroes.Hero.toString()'],['../classminihearthstone_1_1entities_1_1player_1_1_player.html#a2ba5d94b35e8965855b060ae5a9677e2',1,'minihearthstone.entities.player.Player.toString()']]],
-  ['tourbillon',['Tourbillon',['../classminihearthstone_1_1entities_1_1cards_1_1_tourbillon.html#a7b726d3e83a33b81a49b6b27cbb8d9df',1,'minihearthstone::entities::cards::Tourbillon']]]
-];
