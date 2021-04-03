@@ -6,6 +6,7 @@ include:
 stages:
   - build
   - test
+  - deploy
   # - execute
 
 build-job:
@@ -21,6 +22,16 @@ test-job:
     - echo "Running tests on $CI_COMMIT_BRANCH branch"
     - cd /builds/rkmarechal/minihearthstone/code/server
     - mvn test
+
+deploy-server-job:
+  stage: deploy
+  script:
+    - echo "Deploying server from $CI_COMMIT_BRANCH branch to heroku minihearthstone-server"
+
+deploy-client-job:
+  stage: deploy
+  script:
+    - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku minihearthstone-server"
 
 code_quality:
   variables:
