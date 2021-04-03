@@ -1,6 +1,4 @@
-services:
-  - name: maven:3-jdk-8
-  - name: node:latest
+image: ksimple/java8-mvn-nodejs-npm-python3
 
 include:
   - template: Code-Quality.gitlab-ci.yml
