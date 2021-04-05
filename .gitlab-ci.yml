@@ -6,8 +6,11 @@ include:
 before_script:
   - echo "Updating package index" && echo deb http://ftp.de.debian.org/debian buster main > /etc/apt/sources.list.d/buster-main.list
   - echo "Updating packages" && apt-get update -qy
-  - apt-get install -y ruby-dev
-  - gem install dpl
+  - echo "Installing OpenJDK11 JRE" && apt-get install default-jdk -y
+  - echo "Installing Maven" && apt install maven -y
+  - echo "Installing nodejs and npm" && apt install nodejs npm -y
+  # - apt-get install -y ruby-dev
+  # - gem install dpl
 
 stages:
   - build
