@@ -35,11 +35,15 @@ deploy-server-job:
   stage: deploy
   script:
     - echo "Deploying server from $CI_COMMIT_BRANCH branch to heroku minihearthstone-server"
+  only:
+    - master
 
 deploy-client-job:
   stage: deploy
   script:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku minihearthstone-server"
+  only:
+    - master
 
 code_quality:
   variables:
