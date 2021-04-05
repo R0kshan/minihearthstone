@@ -12,7 +12,7 @@ before_script:
   - echo "Installing nodejs and npm" && apt install nodejs npm -y
   - echo "Installing heroku" && curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
   - echo "Installing ruby and gem" && apt-get install -y ruby-dev
-  - echo gem install dpl
+  - gem install dpl
 
 stages:
   - build
