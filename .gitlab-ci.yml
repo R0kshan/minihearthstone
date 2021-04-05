@@ -6,7 +6,7 @@ include:
 before_script:
   - echo "Updating package index" && echo deb http://ftp.de.debian.org/debian buster main > /etc/apt/sources.list.d/buster-main.list
   - echo "Updating packages" && apt-get update -qy
-  - echo "Installing curl command" && apt-get install curl
+  - echo "Installing curl command" && apt-get install curl -y
   - echo "Installing OpenJDK11 JRE" && apt-get install default-jdk -y
   - echo "Installing Maven" && apt install maven -y
   - echo "Installing nodejs and npm" && apt install nodejs npm -y
