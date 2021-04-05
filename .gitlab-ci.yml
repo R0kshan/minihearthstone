@@ -1,4 +1,4 @@
-image: ksimple/java8-mvn-nodejs-npm-python3
+image: "https://hub.docker.com/repository/docker/rkmarechal/debian-env:latest"
 
 include:
   - template: Code-Quality.gitlab-ci.yml
