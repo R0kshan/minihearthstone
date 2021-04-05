@@ -6,11 +6,13 @@ include:
 before_script:
   # - echo "Updating package index" && echo deb http://ftp.de.debian.org/debian buster main > /etc/apt/sources.list.d/buster-main.list
   - echo "Updating packages" && apt-get update -qy
-  - echo "Installing utility commands" && apt-get install curl gem -y
+  - echo "Installing utility commands" && apt-get install curl -y
   - echo "Installing OpenJDK11 JRE" && apt-get install default-jdk -y
   - echo "Installing Maven" && apt install maven -y
   - echo "Installing nodejs and npm" && apt install nodejs npm -y
-  - echo "Installing heroku" && curl https://cli-assets.heroku.com/install-ubuntu.sh | sh && gem install dpl
+  - echo "Installing heroku" && curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  - echo "Installing ruby and gem" && apt-get install -y ruby-dev
+  - echo gem install dpl
 
 stages:
   - build
