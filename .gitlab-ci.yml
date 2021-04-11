@@ -56,6 +56,8 @@ deploy-client-job:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
     # - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
     - heroku git:remote -a $HEROKU_APP_CLIENT
+    - git add 
+    - git commit -m "push from $CI_COMMIT_BRANCH branch"
     - git push heroku master
   only:
     - master
