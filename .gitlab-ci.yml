@@ -10,11 +10,9 @@ before_script:
   - echo "Installing OpenJDK11 JRE" && apt-get install default-jdk -y
   - echo "Installing Maven" && apt install maven -y
   - echo "Installing nodejs and npm" && apt install nodejs npm -y
-  # - echo "Installing heroku" && curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-  # - echo "Installing ruby and gem" && apt-get install -y ruby-dev
-  # - gem install dpl
-  - echo "Installing git" && apt install git -y
-  - echo "Installing heroku cli" && npm install -g heroku-cli
+  - echo "Installing heroku" && curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+  - echo "Installing ruby and gem" && apt-get install -y ruby-dev
+  - gem install dpl
 
 
 stages:
@@ -42,7 +40,7 @@ deploy-server-job:
     HEROKU_API_KEY: $HEROKU_API_KEY
   script:
     - echo "Deploying server from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_SERVER"
-    # - dpl --provider=heroku --app=$HEROKU_APP_SERVER --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=$HEROKU_APP_SERVER --api-key=$HEROKU_API_KEY
     - heroku git:remote -a $HEROKU_APP_SERVER
     - git push heroku master
   only:
@@ -54,12 +52,7 @@ deploy-client-job:
     HEROKU_API_KEY: $HEROKU_API_KEY
   script:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
-    # - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
-    - git init
-    - git add .
-    - git commit -m "push from $CI_COMMIT_BRANCH branch"
-    - heroku git:remote -a $HEROKU_APP_CLIENT
-    - git push heroku master
+    - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
   only:
     - master
 
