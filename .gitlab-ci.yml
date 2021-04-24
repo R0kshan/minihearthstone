@@ -72,3 +72,4 @@ metrics:
   artifacts:
     reports:
       metrics: metrics.txt
+      
