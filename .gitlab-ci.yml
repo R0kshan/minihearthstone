@@ -40,6 +40,7 @@ deploy-server-job:
     HEROKU_API_KEY: $HEROKU_API_KEY
   script:
     - echo "Deploying server from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_SERVER"
+    - cd /builds/rkmarechal/minihearthstone/code/server
     - dpl --provider=heroku --app=$HEROKU_APP_SERVER --api-key=$HEROKU_API_KEY
     - heroku git:remote -a $HEROKU_APP_SERVER
     - git push heroku master
@@ -52,6 +53,7 @@ deploy-client-job:
   #  HEROKU_API_KEY: $HEROKU_API_KEY
   script:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
+    - cd /builds/rkmarechal/minihearthstone/code/client
     - dpl --provider=heroku --app=minihearthstone-client --api-key=6047947b-2bc9-4f14-965e-12a7e4187154
   only:
     - master
