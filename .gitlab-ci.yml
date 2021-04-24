@@ -48,11 +48,11 @@ deploy-server-job:
 
 deploy-client-job:
   stage: deploy
-  variables:
-    HEROKU_API_KEY: $HEROKU_API_KEY
+  # variables:
+  #  HEROKU_API_KEY: $HEROKU_API_KEY
   script:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
-    - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=minihearthstone-client --api-key=6047947b-2bc9-4f14-965e-12a7e4187154
   only:
     - master
 
@@ -72,4 +72,4 @@ metrics:
   artifacts:
     reports:
       metrics: metrics.txt
-      
+
