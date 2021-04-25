@@ -54,7 +54,7 @@ deploy-client-job:
   script:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
     - cd /builds/rkmarechal/minihearthstone/code/client
-    - dpl heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
   only:
     - master
 
