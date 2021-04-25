@@ -26,6 +26,9 @@ deploy-server-job:
   stage: deploy
   variables:
     HEROKU_API_KEY: $HEROKU_API_KEY
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+    - when: manual
   script:
     - echo "Deploying server from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_SERVER"
     - apt-get update -qy
@@ -41,6 +44,9 @@ deploy-client-job:
   image: ruby:latest
   variables:
     HEROKU_API_KEY: $HEROKU_API_KEY
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+    - when: manual
   script:
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
     - apt-get update -qy
