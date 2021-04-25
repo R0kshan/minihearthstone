@@ -1,19 +1,5 @@
-image: debian:stable
-
 include:
   - template: Code-Quality.gitlab-ci.yml
-
-before_script:
-  # - echo "Updating package index" && echo deb http://ftp.de.debian.org/debian buster main > /etc/apt/sources.list.d/buster-main.list
-  - echo "Updating packages" && apt-get update -qy
-  - echo "Installing utility commands" && apt-get install curl -y
-  - echo "Installing OpenJDK11 JRE" && apt-get install default-jdk -y
-  - echo "Installing Maven" && apt install maven -y
-  - echo "Installing nodejs and npm" && apt install nodejs npm -y
-  - echo "Installing heroku" && curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-  - echo "Installing ruby and gem" && apt-get install -y ruby-dev
-  - gem install dpl
-
 
 stages:
   - build
@@ -26,7 +12,7 @@ build-job:
   script:
     - echo "Building $CI_COMMIT_BRANCH branch"
     - cd /builds/rkmarechal/minihearthstone/code/server
-    - mvn clean install -Dmaven.test.skip=true
+    - mvn install
 
 test-job:
   image: maven:3-jdk-8
@@ -42,10 +28,11 @@ deploy-server-job:
     HEROKU_API_KEY: $HEROKU_API_KEY
   script:
     - echo "Deploying server from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_SERVER"
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
     - cd /builds/rkmarechal/minihearthstone/code/server
-    - dpl heroku --app=$HEROKU_APP_SERVER --api-key=$HEROKU_API_KEY
-    - heroku git:remote -a $HEROKU_APP_SERVER
-    - git push heroku master
+    - dpl --provider=heroku --app=$HEROKU_APP_SERVER --api-key=$HEROKU_API_KEY
   only:
     - master
 
@@ -55,10 +42,10 @@ deploy-client-job:
   variables:
     HEROKU_API_KEY: $HEROKU_API_KEY
   script:
+    - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
     - apt-get update -qy
     - apt-get install -y ruby-dev
     - gem install dpl
-    - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
     - cd /builds/rkmarechal/minihearthstone/code/client
     - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
   only:
