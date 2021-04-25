@@ -21,6 +21,7 @@ stages:
   - deploy
 
 build-job:
+  image: maven:3-jdk-8
   stage: build
   script:
     - echo "Building $CI_COMMIT_BRANCH branch"
@@ -28,6 +29,7 @@ build-job:
     - mvn clean install -Dmaven.test.skip=true
 
 test-job:
+  image: maven:3-jdk-8
   stage: test
   script:
     - echo "Running tests on $CI_COMMIT_BRANCH branch"
@@ -49,9 +51,13 @@ deploy-server-job:
 
 deploy-client-job:
   stage: deploy
+  image: ruby:latest
   variables:
     HEROKU_API_KEY: $HEROKU_API_KEY
   script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
     - echo "Deploying client from $CI_COMMIT_BRANCH branch to heroku $HEROKU_APP_CLIENT"
     - cd /builds/rkmarechal/minihearthstone/code/client
     - dpl --provider=heroku --app=$HEROKU_APP_CLIENT --api-key=$HEROKU_API_KEY
